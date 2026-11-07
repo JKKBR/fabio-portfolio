@@ -88,6 +88,20 @@ Editor simples para criação de fluxogramas e diagramas de processos, aplicáve
 
 ---
 
+#### 🛠️ Gerador de Laudos Técnicos e Ordens de Serviço
+
+Aplicação web para criação de ordens de serviço e laudos técnicos, com suporte a múltiplos equipamentos, cadastro estruturado de peças, cálculo de mão de obra, relatório final, impressão, PDF, TXT e backup local.
+
+**Principais recursos:**
+- Até cinco equipamentos por número de OS
+- Quantidade, descrição e valor unitário das peças
+- Cálculo automático dos totais de peças e mão de obra
+- Relatório consolidado com resumo dos equipamentos
+- Exportação em PDF e TXT
+
+🤝 **Desenvolvido em parceria com a FabioFssTech.**  
+🔗 [Acessar Gerador de Laudos Técnicos](https://fabiofsstech.github.io/gerador_laudos/)
+
 ## 🌐 Portfólio Online
 👉 [Portfólio](https://jkkbr.github.io/portfolio/)
 
