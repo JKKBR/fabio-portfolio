@@ -162,35 +162,47 @@ export const projects: Project[] = [
       "https://artesanatoslucias.vercel.app/",
   },
   {
-    slug: "logitrack",
-    title: "LogiTrack",
-    category: "Logística",
-    description:
-      "Simulador de torre de controle, telemetria e visualização de indicadores de frota.",
-    status: "Disponível",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Leaflet",
-      "Chart.js",
-    ],
-    problem:
-      "Operações de transporte precisam reunir localização, produtividade, segurança e indicadores em uma visão integrada.",
-    solution:
-      "Um simulador visual que combina mapa, status de rotas, KPIs e monitoramento de segurança.",
-    role:
-      "Concepção, desenvolvimento da interface, integração dos módulos e documentação.",
-    resources: [
-      "Mapa interativo",
-      "Status de veículos",
-      "Dashboard de KPIs",
-      "Geofencing",
-      "Simulação de CFTV",
-    ],
-    liveUrl:
-      "https://jkkbr.github.io/simulador-de-frota/",
-  },
+  slug: "logitrack",
+  title: "LogiTrack",
+  category: "Logística",
+  description:
+    "Simulador de Torre de Controle que integra rastreabilidade, produtividade, indicadores e segurança patrimonial em uma visão operacional.",
+  status: "Disponível",
+  technologies: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Leaflet.js",
+    "Chart.js",
+  ],
+  problem:
+    "Informações de localização, produtividade, entregas e segurança podem ficar dispersas, dificultando a construção de uma visão geral da operação.",
+  solution:
+    "Uma aplicação demonstrativa que reúne mapa, veículos, rotas, status, indicadores e recursos simulados de CFTV em uma interface centralizada.",
+  role:
+    "Definição do conceito, organização dos módulos, integração do mapa, modelagem dos indicadores, criação da experiência de monitoramento, testes e documentação.",
+  aiUse:
+    "Desenvolvimento assistido por IA, com definição dos módulos, validação funcional, revisão visual e decisões técnicas sob responsabilidade humana.",
+  resources: [
+    "Mapa interativo",
+    "Veículos simulados",
+    "Status operacional",
+    "Painel de rotas",
+    "Indicadores logísticos",
+    "Telemetria simulada",
+    "Interface de CFTV",
+  ],
+  nextSteps: [
+    "Histórico de rotas",
+    "Alertas operacionais",
+    "Cercas geográficas configuráveis",
+    "Comparação entre veículos",
+    "Relatórios demonstrativos",
+    "Testes automatizados",
+  ],
+  liveUrl:
+    "https://jkkbr.github.io/simulador-de-frota/",
+},
   {
     slug: "gerador-diagramas",
     title: "Gerador de Diagramas",
