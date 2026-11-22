@@ -7,7 +7,7 @@ const questions = [
   "Qual dificuldade precisa ser resolvida?",
   "Quem enfrenta esse problema?",
   "O que torna as soluções atuais complicadas?",
-  "Qual seria a versao mais simples e útil?",
+  "Qual seria a versão mais simples e útil?",
   "Como validar antes de disponibilizar?",
   "O que automatizar sem retirar o controle do usuário?",
 ];
@@ -34,86 +34,103 @@ export default function SobrePage() {
             <span className="tag">Maricá, RJ</span>
           </aside>
           <div className="story">
-            <h2>Uma curiosidade que se tornou profissao</h2>
+            <h2>Uma curiosidade que se tornou profissão</h2>
+
             <p>
-              Minha relacao com a tecnologia comecou ainda na infancia, quando
+              Minha relação com a tecnologia começou ainda na infância, quando
               tive contato com um computador 486. Explorar, testar
-              possibilidades e entender como cada coisa funcionava transformou
-              curiosidade em trajetoria profissional.
+              possibilidades e entender como cada coisa funcionava transformou a
+              curiosidade em uma trajetória profissional.
             </p>
+
             <p>
-              Construi experiência em suporte técnico, infraestrutura, Windows,
-              Microsoft 365, redes, inventario, controle patrimonial, Field
-              Service, documentacao e acompanhamento de chamados dentro de SLA.
+              Construí experiência em suporte técnico, infraestrutura, Windows,
+              Microsoft 365, redes, inventário, controle patrimonial, Field
+              Service, documentação e acompanhamento de chamados dentro de SLA.
             </p>
+
             <p>
               Ao reconhecer que controle de ativos, rastreabilidade,
-              movimentacao e logística reversa tambem faziam parte da minha
+              movimentação e logística reversa também faziam parte da minha
               experiência, ampliei meus estudos em Logística e passei a observar
-              processos pelos lados técnico e operacional.
+              os processos pelos lados técnico e operacional.
             </p>
           </div>
         </div>
       </section>
+
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">Da necessidade a criação</p>
-            <h2>Projetos que comecam com uma dificuldade real</h2>
+            <p className="eyebrow">Da necessidade à criação</p>
+
+            <h2>Projetos que começam com uma dificuldade real</h2>
           </div>
+
           <div className="grid grid-2">
             <article className="card">
               <h3>O ponto de partida</h3>
+
               <p>
                 Durante a busca por emprego, encontrei ferramentas de currículo
-                com cadastros obrigatórios, limitacoes inesperadas e excesso de
-                anuncios. Criei uma alternativa mais direta e transparente.
+                com cadastros obrigatórios, limitações inesperadas e excesso de
+                anúncios. Criei uma alternativa mais direta e transparente.
               </p>
             </article>
+
             <article className="card">
-              <h3>O principio que permaneceu</h3>
+              <h3>O princípio que permaneceu</h3>
+
               <p>
                 Identificar uma dificuldade concreta, compreender o processo,
-                construir um prototipo funcional e avaliar como a tecnologia
+                construir um protótipo funcional e avaliar como a tecnologia
                 pode simplificar a tarefa.
               </p>
             </article>
           </div>
         </div>
       </section>
+
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
             <p className="eyebrow">Minha forma de desenvolver</p>
+
             <h2>IA como apoio, responsabilidade humana nas decisões</h2>
+
             <p>
-              Utilizo inteligência artificial em pesquisa, implementacao e
-              investigacao. Produto, prioridades, testes, validação e revisao
+              Utilizo inteligência artificial em pesquisa, implementação e
+              investigação. Produto, prioridades, testes, validação e revisão
               final permanecem sob minha responsabilidade.
             </p>
           </div>
+
           <div className="quote-card">
-            Desenvolvimento assistido por IA, com revisao humana, validação
-            pratica e testes automatizados.
+            Desenvolvimento assistido por IA, com revisão humana, validação
+            prática e testes automatizados.
           </div>
+
           <div className="question-grid">
-            {questions.map((q) => (
-              <div className="question" key={q}>
-                {q}
+            {questions.map((question) => (
+              <div className="question" key={question}>
+                {question}
               </div>
             ))}
           </div>
         </div>
       </section>
+
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">Proximos passos</p>
-            <h2>Continuar aproximando experiência pratica e tecnologia</h2>
+            <p className="eyebrow">Próximos passos</p>
+
+            <h2>Continuar aproximando experiência prática e tecnologia</h2>
+
             <p>
-              Meu objetivo e criar soluções simples, úteis e adaptadas a
+              Meu objetivo é criar soluções simples, úteis e adaptadas às
               necessidades reais, economizando tempo, organizando processos e
-              tornando tarefas mais acessiveis.
+              tornando tarefas mais acessíveis.
             </p>
           </div>
         </div>

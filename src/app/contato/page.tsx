@@ -24,7 +24,7 @@ export default function ContatoPage() {
       <PageHeader
         eyebrow="Contato"
         title="Vamos conversar"
-        description="Estou aberto a oportunidades, colaboracoes e conversas sobre produtos, automacao e soluções digitais."
+        description="Estou aberto a oportunidades, colaborações e conversas sobre produtos, automação e soluções digitais."
       />
       <section className="section section-alt">
         <div className="container grid grid-2">

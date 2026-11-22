@@ -5,9 +5,9 @@ export function ProcessSection() {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">Como eu desenvolvo</p>
-          <h2>Da necessidade a uma solucao testavel</h2>
+          <h2>Da necessidade a uma solução testável</h2>
           <p>
-            Desenvolvimento assistido por IA, com revisao humana, validação
+            Desenvolvimento assistido por IA, com revisão humana, validação
             pratica e testes automatizados.
           </p>
         </div>

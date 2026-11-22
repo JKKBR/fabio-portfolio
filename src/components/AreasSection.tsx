@@ -1,7 +1,7 @@
 const areas = [
   ["Tecnologia", "Infraestrutura, redes, Microsoft 365 e suporte técnico."],
   ["Logística", "Inventario, rastreabilidade, ativos e operações."],
-  ["Automacao", "Reducao de etapas manuais e organizacao de fluxos."],
+  ["Automação", "Redução de etapas manuais e organizacao de fluxos."],
   ["IA aplicada", "Prototipagem assistida, validação e produtividade."],
 ];
 
@@ -11,7 +11,7 @@ export function AreasSection() {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">Experiência que conecta areas</p>
-          <h2>Visao tecnica e operacional</h2>
+          <h2>Visão técnica e operacional</h2>
         </div>
         <div className="grid grid-4">
           {areas.map(([title, text], index) => (

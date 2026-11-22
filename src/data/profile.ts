@@ -7,5 +7,5 @@ export const profile = {
   github: "https://github.com/JKKBR",
   linkedin: "https://linkedin.com/in/fabiofss",
   summary:
-    "Transformo problemas especificos em ferramentas web simples, testaveis e orientadas ao processo real do usuário.",
+    "Transformo problemas específicos em ferramentas web simples, testáveis e orientadas ao processo real do usuário.",
 };

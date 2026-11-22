@@ -15,7 +15,7 @@ export default function ProjetosPage() {
       <PageHeader
         eyebrow="Portfólio"
         title="Projetos e estudos de caso"
-        description="Ferramentas criadas para carreira, logística, produtividade, automacao e validação de ideias."
+        description="Ferramentas criadas para carreira, logística, produtividade, automação e validação de ideias."
       />
       <section className="section section-alt">
         <div className="container">
