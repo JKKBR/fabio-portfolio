@@ -4,11 +4,11 @@ import { useMemo, useState } from "react";
 import type { Project } from "@/types/project";
 import { ProjectCard } from "./ProjectCard";
 
-const categories = ["Todos", "Micro SaaS e IA", "Logistica", "Carreira", "Produtividade", "Experimental"];
+const categories = ["Todos", "Micro SaaS e IA", "Logística", "Carreira", "Produtividade", "Experimental"];
 
 function categoryMatches(project: Project, category: string) {
   if (category === "Todos") return true;
-  if (category === "Logistica") return project.category.includes("Logistica");
+  if (category === "Logística") return project.category.includes("Logística");
   if (category === "Carreira") return project.category.includes("Carreira");
   return project.category === category;
 }

@@ -3,8 +3,8 @@ import type { Project } from "@/types/project";
 
 const categoryClass: Record<string, string> = {
   "Micro SaaS e IA": "visual-ai",
-  "Logistica e Educacao": "visual-logistics",
-  Logistica: "visual-logistics",
+  "Logística e Educacao": "visual-logistics",
+  Logística: "visual-logistics",
   Carreira: "visual-career",
   "Carreira e Automacao": "visual-career",
   Produtividade: "visual-productivity",

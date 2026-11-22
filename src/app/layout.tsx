@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "Portfólio de Fabio Santos com soluções digitais, automações, projetos de logística e protótipos de Micro SaaS orientados a problemas reais.",
 
-  applicationName: "Portfolio Fabio Santos",
+  applicationName: "Portfólio Fabio Santos",
 
   keywords: [
     "Fabio Santos",
@@ -29,18 +29,18 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Fabio Ferreira de Souza Santos",
+      name: "Fabio Santos",
       url: "https://ffssportfolio.vercel.app",
     },
   ],
 
-  creator: "Fabio Ferreira de Souza Santos",
+  creator: "Fabio Santos",
 
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: "https://ffssportfolio.vercel.app",
-    siteName: "Portfolio Fabio Santos",
+    siteName: "Portfólio Fabio Santos",
     title: "Fabio Santos | Soluções Digitais e Micro SaaS",
     description:
       "Soluções digitais, automações e protótipos criados a partir de necessidades reais.",
@@ -60,5 +60,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR"><body><a className="skip-link" href="#conteudo">Pular para o conteudo</a><Navbar /><main id="conteudo">{children}</main><Footer /></body></html>;
+  return <html lang="pt-BR"><body><a className="skip-link" href="#conteúdo">Pular para o conteúdo</a><Navbar /><main id="conteúdo">{children}</main><Footer /></body></html>;
 }

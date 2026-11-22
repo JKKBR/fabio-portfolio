@@ -8,7 +8,7 @@ export function Hero() {
         <p className="eyebrow">Projetos criados a partir de necessidades reais</p>
         <h1>{profile.role}</h1>
         <p className="hero-copy">{profile.summary}</p>
-        <div className="button-row"><Link className="button primary" href="/projetos">Conhecer projetos</Link><Link className="button secondary" href="/sobre">Minha historia</Link></div>
+        <div className="button-row"><Link className="button primary" href="/projetos">Conhecer projetos</Link><Link className="button secondary" href="/sobre">Minha história</Link></div>
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ export function ProjectCard({ project }: { project: Project }) {
         </div>
         <h3>{project.title}</h3>
         <p>{project.description}</p>
-        <ul className="tech-list" aria-label="Tecnologias utilizadas">
+        <ul className="tech-list" aria-label="Tecnologias útilizadas">
           {project.technologies.slice(0, 4).map((tech) => <li key={tech}>{tech}</li>)}
         </ul>
         <Link className="text-link" href={`/projetos/${project.slug}`}>

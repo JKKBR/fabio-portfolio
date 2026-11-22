@@ -5,16 +5,16 @@ import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
   title: "Projetos",
-  description: "Estudos de caso de solucoes digitais, automacoes e prototipos de Micro SaaS.",
+  description: "Estudos de caso de soluções digitais, automações e protótipos de Micro SaaS.",
 };
 
 export default function ProjetosPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Portfolio"
+        eyebrow="Portfólio"
         title="Projetos e estudos de caso"
-        description="Ferramentas criadas para carreira, logistica, produtividade, automacao e validacao de ideias."
+        description="Ferramentas criadas para carreira, logística, produtividade, automacao e validação de ideias."
       />
       <section className="section section-alt">
         <div className="container">

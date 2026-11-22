@@ -49,7 +49,7 @@ export async function generateMetadata({
       url,
       title: project.title,
       description: project.description,
-      siteName: "Portfolio Fabio Santos",
+      siteName: "Portfólio Fabio Santos",
     },
 
     twitter: {
@@ -99,7 +99,7 @@ export default async function ProjectPage({
 
           <ul
             className="tech-list"
-            aria-label="Tecnologias utilizadas"
+            aria-label="Tecnologias útilizadas"
           >
             {project.technologies.map((technology) => (
               <li key={technology}>

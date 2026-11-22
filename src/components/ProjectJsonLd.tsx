@@ -16,7 +16,7 @@ export function ProjectJsonLd({ project }: { project: Project }) {
     inLanguage: "pt-BR",
     creator: {
       "@type": "Person",
-      name: "Fabio Ferreira de Souza Santos",
+      name: "Fabio Santos",
       url: baseUrl,
     },
     keywords: project.technologies.join(", "),

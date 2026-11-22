@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Fabio Santos - Solucoes Digitais e Micro SaaS";
+export const alt = "Fabio Santos - Soluções Digitais e Micro SaaS";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -50,7 +50,7 @@ export default function OpenGraphImage() {
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <span style={{ fontSize: "28px", fontWeight: 800 }}>Fabio Santos</span>
-            <span style={{ fontSize: "18px", color: "#a3a9b6" }}>Portfolio profissional</span>
+            <span style={{ fontSize: "18px", color: "#a3a9b6" }}>Portfólio profissional</span>
           </div>
         </div>
 
@@ -65,15 +65,15 @@ export default function OpenGraphImage() {
               marginBottom: "22px",
             }}
           >
-            Problemas reais. Solucoes digitais.
+            Problemas reais. Soluções digitais.
           </span>
           <span style={{ fontSize: "65px", fontWeight: 850, lineHeight: 1.06, letterSpacing: "-3px" }}>
-            Solucoes digitais, automacoes e prototipos de Micro SaaS
+            Soluções digitais, automações e protótipos de Micro SaaS
           </span>
         </div>
 
         <div style={{ display: "flex", justifyContent: "space-between", color: "#a3a9b6", fontSize: "18px", position: "relative" }}>
-          <span>Tecnologia • Logistica • IA aplicada</span>
+          <span>Tecnologia • Logística • IA aplicada</span>
           <span>ffssportfolio.vercel.app</span>
         </div>
       </div>
