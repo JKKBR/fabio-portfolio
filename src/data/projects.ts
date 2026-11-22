@@ -216,34 +216,46 @@ export const projects: Project[] = [
     "https://jkkbr.github.io/simulador-de-frota/",
 },
   {
-    slug: "gerador-diagramas",
-    title: "Gerador de Diagramas",
-    category: "Produtividade",
-    description:
-      "Editor leve para criar fluxos, conectar blocos e exportar diagramas em PNG.",
-    status: "Disponível",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Canvas",
-    ],
-    problem:
-      "Criar diagramas simples pode exigir ferramentas maiores e mais complexas do que a necessidade real.",
-    solution:
-      "Um editor direto para montar blocos, conexões e fluxos visuais no navegador.",
-    role:
-      "Concepção, desenvolvimento da interação e testes de usabilidade.",
-    resources: [
-      "Retângulos e círculos",
-      "Conexões direcionais",
-      "Personalização visual",
-      "Arrastar e soltar",
-      "Exportação PNG",
-    ],
-    liveUrl:
-      "https://jkkbr.github.io/gerador-de-diagrama/",
-  },
+  slug: "gerador-diagramas",
+  title: "Gerador de Diagramas",
+  category: "Produtividade",
+  description:
+    "Editor visual para criar blocos, conectar etapas, personalizar diagramas e exportar o resultado em PNG.",
+  status: "Disponível",
+  technologies: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Canvas",
+  ],
+  problem:
+    "Uma atividade extensionista da faculdade exigia a criação de um diagrama, mas ferramentas mais completas possuíam recursos além da necessidade do trabalho.",
+  solution:
+    "Uma aplicação simples para adicionar formas, organizar blocos, criar conexões direcionais, personalizar o visual e exportar o diagrama em PNG.",
+  role:
+    "Definição do escopo, desenvolvimento das interações, movimentação dos blocos, conexões, personalização, exportação e testes em trabalhos acadêmicos.",
+  aiUse:
+    "Desenvolvimento assistido por IA, com definição do escopo, testes práticos, validação acadêmica e revisão humana.",
+  resources: [
+    "Retângulos e círculos",
+    "Movimentação de blocos",
+    "Renomeação de elementos",
+    "Setas direcionais",
+    "Personalização visual",
+    "Quebra automática de texto",
+    "Exportação PNG",
+  ],
+  nextSteps: [
+    "Salvar projetos editáveis",
+    "Desfazer e refazer",
+    "Alinhamento automático",
+    "Novas formas",
+    "Exportação PDF e SVG",
+    "Melhorias de acessibilidade",
+  ],
+  liveUrl:
+    "https://jkkbr.github.io/gerador-de-diagrama/",
+},
   {
     slug: "passaporte-produto-usado",
     title: "Passaporte do Produto Usado",

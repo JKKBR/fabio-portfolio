@@ -10,6 +10,8 @@ import { CenariLogCaseStudy } from "@/components/CenariLogCaseStudy";
 import { ProfessionalResumeCaseStudy } from "@/components/ProfessionalResumeCaseStudy";
 import { LogiTrackCaseStudy } from "@/components/LogiTrackCaseStudy";
 import { InventoryStoreCaseStudy } from "@/components/InventoryStoreCaseStudy";
+import { DiagramGeneratorCaseStudy } from "@/components/DiagramGeneratorCaseStudy";
+
 
 type ProjectPageProps = {
   params: Promise<{
@@ -156,6 +158,8 @@ export default async function ProjectPage({
   <LogiTrackCaseStudy />
 ) : project.slug === "sistema-inventario" ? (
   <InventoryStoreCaseStudy />
+) : project.slug === "gerador-diagramas" ? (
+  <DiagramGeneratorCaseStudy />
 ) : (
   
         <>
