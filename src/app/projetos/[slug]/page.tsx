@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { ProjectJsonLd } from "@/components/ProjectJsonLd";
 import { getProjectBySlug, projects } from "@/data/projects";
 import { SpreadsheetCaseStudy } from "@/components/SpreadsheetCaseStudy";
+import { UsedProductPassportCaseStudy } from "@/components/UsedProductPassportCaseStudy";
+import { CenariLogCaseStudy } from "@/components/CenariLogCaseStudy";
 
 type ProjectPageProps = {
   params: Promise<{
@@ -139,9 +141,14 @@ export default async function ProjectPage({
       </header>
 
             
-      {project.slug === "gerador-planilhas-ia" ? (
-        <SpreadsheetCaseStudy />
-      ) : (
+{project.slug === "gerador-planilhas-ia" ? (
+  <SpreadsheetCaseStudy />
+) : project.slug === "passaporte-produto-usado" ? (
+  <UsedProductPassportCaseStudy />
+) : project.slug === "cenarilog-academy" ? (
+  <CenariLogCaseStudy />
+) : (
+  
         <>
           <section className="section section-alt">
             <div className="container case-grid">

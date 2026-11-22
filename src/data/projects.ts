@@ -42,36 +42,52 @@ export const projects: Project[] = [
       "Segurança de fórmulas",
     ],
   },
-  {
-    slug: "cenarilog-academy",
-    title: "CenariLog Academy",
-    category: "Logística e Educação",
-    description:
-      "Laboratório educacional para simular indicadores, estoque, custos, riscos e decisões logísticas.",
-    featured: true,
-    status: "Disponível",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Armazenamento local",
-    ],
-    problem:
-      "Conceitos logísticos costumam ser estudados isoladamente, dificultando a visualização dos efeitos de cada decisão.",
-    solution:
-      "Um ambiente de simulação que permite alterar cenários, comparar indicadores e observar consequências operacionais.",
-    role:
-      "Concepção, definição dos módulos, validação didática, testes e documentação.",
-    resources: [
-      "OTIF, OTD e Fill Rate",
-      "Curva ABC",
-      "Planejamento mensal",
-      "Matriz de risco",
-      "Otimizador de cenários",
-      "Guia interativo",
-    ],
-    liveUrl:
-      "https://cenarilog-academy.vercel.app/",
-  },
+{
+  slug: "cenarilog-academy",
+  title: "CenariLog Academy",
+  category: "Logística e Educação",
+  description:
+    "Simulador educacional para estudar indicadores, estoque, planejamento, riscos e decisões logísticas por meio da comparação de cenários.",
+  featured: true,
+  status: "Disponível",
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Armazenamento local",
+    "CSV",
+    "JSON",
+    "Vercel",
+  ],
+  problem:
+    "Indicadores e conceitos logísticos costumam ser estudados separadamente, dificultando a compreensão de como uma decisão pode afetar diferentes áreas da operação.",
+  solution:
+    "Um laboratório educacional em que o usuário registra uma operação, cria cenários, altera condições e observa os efeitos sobre atendimento, estoque, prazo, custo e risco.",
+  role:
+    "Definição do produto educacional, organização do fluxo de aprendizagem, seleção dos indicadores, modelagem dos cenários, validação dos cálculos, testes e documentação.",
+  aiUse:
+    "Desenvolvimento assistido por IA, com validação dos cálculos, testes funcionais, revisão didática e decisões humanas.",
+  resources: [
+    "OTIF, OTD e Fill Rate",
+    "Planejamento de reposição",
+    "Curva ABC",
+    "Simulação mensal",
+    "Matriz de riscos",
+    "Decisões operacionais",
+    "Otimizador de cenários",
+    "Guia interativo",
+    "Backup JSON",
+  ],
+  nextSteps: [
+    "Níveis intermediário e avançado",
+    "Novos desafios operacionais",
+    "Relatórios educacionais detalhados",
+    "Melhorias de acessibilidade",
+    "Novos testes automatizados",
+  ],
+  liveUrl:
+    "https://cenarilog-academy.vercel.app/",
+},
   {
     slug: "curriculo-ats",
     title: "Currículos Profissionais",
