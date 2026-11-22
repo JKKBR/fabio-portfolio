@@ -104,12 +104,13 @@ export const projects: Project[] = [
     description: "Projeto pessoal para organizar lugares e rotas de interesse.",
     status: "Em desenvolvimento",
     technologies: ["A definir"],
-    problem: "Organizar referencias de lugares e trajetos pessoais de forma simples.",
-    solution: "Um prototipo para registrar e consultar rotas e locais.",
-    role: "Concepcao e exploracao inicial.",
+    problem: "Organizar referências de lugares e trajetos pessoais de forma simples.",
+    solution: "Um protótipo para registrar e consultar rotas e locais.",
+    role: "Concepção e exploração inicial.",
     resources: ["Projeto de uso pessoal"],
-  }
+    liveUrl: "https://jkkbr.github.io/rotaarota/",
+  },
 ];
 
-export const getProjectBySlug = (slug: string) => projects.find((project) => project.slug === slug);
-    liveUrl: "https://jkkbr.github.io/rotaarota/",
+export const getProjectBySlug = (slug: string) =>
+  projects.find((project) => project.slug === slug);
