@@ -42,7 +42,7 @@ export const projects: Project[] = [
     solution: "Uma alternativa direta, sem cadastro obrigatorio, com pre-visualizacao e exportacao em PDF e TXT.",
     role: "Definicao da experiencia, desenvolvimento, testes e evolucao funcional.",
     resources: ["Pre-visualizacao", "Multiplas experiencias", "Exportacao PDF", "Importacao e exportacao TXT", "Processamento local"],
-    liveUrl: "https://jkkbr.github.io/curriculo-for-ats/",
+    liveUrl: "https://criadordecurriculo-nine.vercel.app/",
   },
   {
     slug: "sistema-inventario",
@@ -72,18 +72,6 @@ export const projects: Project[] = [
     liveUrl: "https://jkkbr.github.io/simulador-de-frota/",
   },
   {
-    slug: "radar-vagas",
-    title: "Radar de Vagas",
-    category: "Carreira e Automacao",
-    description: "Painel pessoal para consolidar feeds autorizados de vagas, aplicar filtros e enviar alertas.",
-    status: "Demonstracao",
-    technologies: ["Next.js", "Supabase", "Telegram", "Vercel Cron"],
-    problem: "Acompanhar diversas fontes de vagas manualmente consome tempo e gera repeticao.",
-    solution: "Um painel com filtros, pontuacao, deduplicacao e alertas, mantendo a candidatura manual.",
-    role: "Definicao do fluxo, desenvolvimento, configuracao dos filtros, seguranca e testes.",
-    resources: ["Feeds RSS e Atom", "Filtros editaveis", "Deduplicacao", "Alertas via Telegram", "Execucao agendada"],
-  },
-  {
     slug: "gerador-diagramas",
     title: "Gerador de Diagramas",
     category: "Produtividade",
@@ -94,6 +82,7 @@ export const projects: Project[] = [
     solution: "Um editor direto para montar blocos, conexoes e fluxos visuais no navegador.",
     role: "Concepcao, desenvolvimento da interacao e testes de usabilidade.",
     resources: ["Retangulos e circulos", "Conexoes direcionais", "Personalizacao visual", "Arrastar e soltar", "Exportacao PNG"],
+    liveUrl: "https://jkkbr.github.io/gerador-de-diagrama/",
   },
   {
     slug: "passaporte-produto-usado",
@@ -106,6 +95,7 @@ export const projects: Project[] = [
     solution: "Um conceito de registro estruturado para apoiar transparencia e consulta.",
     role: "Pesquisa, definicao inicial e validacao do conceito.",
     resources: ["Projeto em documentacao"],
+    liveUrl: "https://jkkbr.github.io/PassaporteProdutoUsado/",
   },
   {
     slug: "rota-a-rota",
@@ -122,3 +112,4 @@ export const projects: Project[] = [
 ];
 
 export const getProjectBySlug = (slug: string) => projects.find((project) => project.slug === slug);
+    liveUrl: "https://jkkbr.github.io/rotaarota/",
