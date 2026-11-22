@@ -130,37 +130,49 @@ export const projects: Project[] = [
   liveUrl:
     "https://criadordecurriculo-nine.vercel.app/",
 },
-  {
-    slug: "sistema-inventario",
-    title: "Sistema de Gestão de Inventário",
-    category: "Logística",
-    description:
-      "Controle de estoque e vitrine digital aplicados a um pequeno comércio local.",
-    featured: true,
-    status: "Disponível",
-    technologies: [
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Supabase",
-      "Cloudinary",
-    ],
-    problem:
-      "Processos manuais dificultavam o controle do estoque, das reservas e da disponibilidade dos produtos.",
-    solution:
-      "Uma plataforma digital com cadastro, baixa, status de disponibilidade, filtros e vitrine atualizada.",
-    role:
-      "Levantamento da necessidade, modelagem do fluxo, desenvolvimento, implantação e validação.",
-    resources: [
-      "Entradas e saídas",
-      "Status disponível, reservado e vendido",
-      "Filtros",
-      "Vitrine digital",
-      "Contato por WhatsApp",
-    ],
-    liveUrl:
-      "https://artesanatoslucias.vercel.app/",
-  },
+ {
+  slug: "sistema-inventario",
+  title: "Sistema de Gestão de Inventário",
+  category: "Logística",
+  description:
+    "Sistema de inventário e vitrine digital criado para organizar produtos usados, controlar sua disponibilidade e facilitar o contato com os interessados.",
+  featured: true,
+  status: "Disponível",
+  technologies: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Supabase",
+    "Cloudinary",
+  ],
+  problem:
+    "Fotografias e informações dos produtos eram apresentadas de forma dispersa, dificultando o controle da disponibilidade e a organização da vitrine.",
+  solution:
+    "Uma plataforma com painel administrativo, cadastro de produtos, gerenciamento de imagens, estados de disponibilidade, filtros e vitrine digital.",
+  role:
+    "Levantamento da necessidade, definição do produto, modelagem do estoque, desenvolvimento, integrações, testes, validação e publicação.",
+  aiUse:
+    "Desenvolvimento assistido por IA, com definição do fluxo, testes funcionais, validação prática e decisões sob responsabilidade humana.",
+  resources: [
+    "Cadastro de produtos",
+    "Gerenciamento de imagens",
+    "Controle de entradas e saídas",
+    "Status disponível, reservado e vendido",
+    "Filtros",
+    "Vitrine digital",
+    "Contato por WhatsApp",
+  ],
+  nextSteps: [
+    "Histórico de movimentações",
+    "Relatórios de estoque",
+    "Indicadores de vendas",
+    "Alertas de reservas",
+    "Testes automatizados",
+    "Melhorias de acessibilidade",
+  ],
+  liveUrl:
+    "https://artesanatoslucias.vercel.app/",
+},
   {
   slug: "logitrack",
   title: "LogiTrack",

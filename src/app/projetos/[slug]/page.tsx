@@ -9,6 +9,7 @@ import { UsedProductPassportCaseStudy } from "@/components/UsedProductPassportCa
 import { CenariLogCaseStudy } from "@/components/CenariLogCaseStudy";
 import { ProfessionalResumeCaseStudy } from "@/components/ProfessionalResumeCaseStudy";
 import { LogiTrackCaseStudy } from "@/components/LogiTrackCaseStudy";
+import { InventoryStoreCaseStudy } from "@/components/InventoryStoreCaseStudy";
 
 type ProjectPageProps = {
   params: Promise<{
@@ -153,6 +154,8 @@ export default async function ProjectPage({
   <ProfessionalResumeCaseStudy />
 ) : project.slug === "logitrack" ? (
   <LogiTrackCaseStudy />
+) : project.slug === "sistema-inventario" ? (
+  <InventoryStoreCaseStudy />
 ) : (
   
         <>
