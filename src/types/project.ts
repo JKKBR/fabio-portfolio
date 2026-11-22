@@ -16,4 +16,7 @@ export type Project = {
   nextSteps?: string[];
   liveUrl?: string;
   githubUrl?: string;
+  image?: string;
+  imageAlt?: string;
+  videoUrl?: string;
 };
