@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Game - Explorador de Constelações</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #00cc88;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+    canvas {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #00cc88;
+      background: #0d0d0d;
+    }
+    #gameMessage {
+      font-weight: bold;
+      margin-top: 15px;
+      color: #fff;
+    }
+    #gameMessage a {
+      color: #00cc88;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    #gameMessage a:hover {
+      text-decoration: underline;
+    }
+    #tooltip {
+      position: absolute;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #00cc88;
+      display: none;
+      max-width: 220px;
+      font-size: 14px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌌 Mini Game: Explorador de Constelações</h1>
+  <canvas id="gameCanvas" width="800" height="500"></canvas>
+  <p id="gameMessage"></p>
+  <div id="tooltip"></div>
+
+  <script>
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+    const tooltip = document.getElementById("tooltip");
+
+    // Planetas (projetos)
+    const planets = [
+      {x:150, y:200, r:30, baseR:30, color:"#00cc88", name:"Crie Currículo Grátis", link:"https://jkkbr.github.io/crie-curriculo-gratis/"},
+      {x:400, y:100, r:30, baseR:30, color:"#ff8800", name:"Gerador de Diagrama", link:"https://jkkbr.github.io/gerador-de-diagrama/"},
+      {x:650, y:300, r:30, baseR:30, color:"#0088ff", name:"Portfólio Online", link:"https://jkkbr.github.io/portfolio/"}
+    ];
+
+    let visited = [];
+
+    // Estrelas piscando
+    const stars = [];
+    for(let i=0; i<100; i++){
+      stars.push({
+        x: Math.random()*canvas.width,
+        y: Math.random()*canvas.height,
+        r: Math.random()*2,
+        opacity: Math.random()
+      });
+    }
+
+    function drawStars(){
+      stars.forEach(s=>{
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI*2);
+        ctx.fillStyle = `rgba(255,255,255,${s.opacity})`;
+        ctx.fill();
+        ctx.closePath();
+        s.opacity += (Math.random()-0.5)*0.05;
+        if(s.opacity<0) s.opacity=0;
+        if(s.opacity>1) s.opacity=1;
+      });
+    }
+
+    // Fogos de artifício
+    let fireworks = [];
+
+    function createFirework(x, y) {
+      for(let i=0; i<30; i++) {
+        fireworks.push({
+          x: x,
+          y: y,
+          dx: (Math.random()-0.5)*6,
+          dy: (Math.random()-0.5)*6,
+          life: 60,
+          color: `hsl(${Math.random()*360},100%,50%)`
+        });
+      }
+    }
+
+    function drawFireworks() {
+      fireworks.forEach((f, index) => {
+        ctx.beginPath();
+        ctx.arc(f.x, f.y, 3, 0, Math.PI*2);
+        ctx.fillStyle = f.color;
+        ctx.fill();
+        ctx.closePath();
+
+        f.x += f.dx;
+        f.y += f.dy;
+        f.dy += 0.05;
+        f.life--;
+
+        if(f.life <= 0) {
+          fireworks.splice(index,1);
+        }
+      });
+    }
+
+    function drawPlanets(){
+      planets.forEach(p=>{
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+        ctx.fillStyle = p.color;
+        ctx.fill();
+        ctx.closePath();
+        p.r = p.baseR + Math.sin(Date.now()/300)*3;
+      });
+    }
+
+    function draw(){
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      drawStars();
+      drawPlanets();
+      drawFireworks();
+      requestAnimationFrame(draw);
+    }
+
+    canvas.addEventListener("click", e=>{
+      const rect = canvas.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      let clicked = false;
+
+      planets.forEach(p=>{
+        const dist = Math.sqrt((mouseX - p.x)**2 + (mouseY - p.y)**2);
+        if(dist < p.r){
+          clicked = true;
+          if(!visited.includes(p.name)){
+            visited.push(p.name);
+            createFirework(p.x, p.y);
+          }
+          document.getElementById("gameMessage").innerHTML = 
+            `🌌 Você descobriu <b>${p.name}</b>! <a href="${p.link}" target="_blank">Acessar</a>`;
+
+          // Mostrar balão com resumo
+          tooltip.style.left = (e.clientX + 10) + "px";
+          tooltip.style.top = (e.clientY - 40) + "px";
+          tooltip.innerHTML = `<b>${p.name}</b><br>${getSummary(p.name)}`;
+          tooltip.style.display = "block";
+
+          if(visited.length === planets.length){
+            document.getElementById("gameMessage").innerHTML = 
+              "🚀 <span style='color:#00cc88;'>Você explorou todo o universo JKKBR!</span>";
+            createFirework(canvas.width/2, canvas.height/2);
+          }
+        }
+      });
+
+      if(!clicked){
+        tooltip.style.display = "none";
+      }
+    });
+
+    function getSummary(name){
+      if(name === "Crie Currículo Grátis") return "Ferramenta para criar currículos online de forma simples e gratuita.";
+      if(name === "Gerador de Diagrama") return "Editor visual para diagramas com blocos e setas, exportável em PNG.";
+      if(name === "Portfólio Online") return "Meu espaço digital reunindo projetos, ideias e experimentos.";
+      return "";
+    }
+
+    draw();
+  </script>
+</body>
+</html>
