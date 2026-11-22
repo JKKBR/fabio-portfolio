@@ -122,9 +122,7 @@ function FeatureList({ items }: FeatureListProps) {
   return (
     <ul className="feature-list">
       {items.map((item) => (
-        <li key={item}>
-          {item}
-        </li>
+        <li key={item}>{item}</li>
       ))}
     </ul>
   );
@@ -135,9 +133,7 @@ export function SpreadsheetCaseStudy() {
     <>
       <section className="section spreadsheet-introduction">
         <div className="container narrow">
-          <p className="eyebrow">
-            Gerador de Planilhas com IA
-          </p>
+          <p className="eyebrow">Gerador de Planilhas com IA</p>
 
           <h2>
             Transforme uma descrição em uma planilha Excel pronta para uso
@@ -160,20 +156,14 @@ export function SpreadsheetCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Exemplo de uso
-            </p>
+            <p className="eyebrow">Exemplo de uso</p>
 
-            <h2>
-              Da necessidade informada ao arquivo estruturado
-            </h2>
+            <h2>Da necessidade informada ao arquivo estruturado</h2>
           </div>
 
           <div className="example-grid">
             <article className="case-panel">
-              <span className="case-panel-label">
-                O usuário escreve
-              </span>
+              <span className="case-panel-label">O usuário escreve</span>
 
               <blockquote>
                 “Preciso controlar equipamentos, manutenções e peças de
@@ -183,9 +173,7 @@ export function SpreadsheetCaseStudy() {
             </article>
 
             <article className="case-panel">
-              <span className="case-panel-label">
-                A aplicação gera
-              </span>
+              <span className="case-panel-label">A aplicação gera</span>
 
               <FeatureList items={generatedItems} />
             </article>
@@ -196,13 +184,9 @@ export function SpreadsheetCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              O problema
-            </p>
+            <p className="eyebrow">O problema</p>
 
-            <h2>
-              Planilhas personalizadas exigem conhecimento técnico
-            </h2>
+            <h2>Planilhas personalizadas exigem conhecimento técnico</h2>
 
             <p>
               Modelos prontos raramente atendem exatamente à realidade de cada
@@ -213,9 +197,7 @@ export function SpreadsheetCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              A solução
-            </p>
+            <p className="eyebrow">A solução</p>
 
             <h2>
               Uma estrutura gerada a partir de uma solicitação em português
@@ -238,25 +220,17 @@ export function SpreadsheetCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Fluxo da aplicação
-            </p>
+            <p className="eyebrow">Fluxo da aplicação</p>
 
-            <h2>
-              Uma experiência guiada e verificável
-            </h2>
+            <h2>Uma experiência guiada e verificável</h2>
           </div>
 
           <ol className="case-flow">
             {flow.map((step, index) => (
               <li key={step}>
-                <span>
-                  {String(index + 1).padStart(2, "0")}
-                </span>
+                <span>{String(index + 1).padStart(2, "0")}</span>
 
-                <strong>
-                  {step}
-                </strong>
+                <strong>{step}</strong>
               </li>
             ))}
           </ol>
@@ -266,20 +240,14 @@ export function SpreadsheetCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Principais funcionalidades
-            </p>
+            <p className="eyebrow">Principais funcionalidades</p>
 
-            <h2>
-              Controle do pedido até a exportação
-            </h2>
+            <h2>Controle do pedido até a exportação</h2>
           </div>
 
           <div className="grid grid-2">
             <article className="case-panel">
-              <h3>
-                Geração por linguagem natural
-              </h3>
+              <h3>Geração por linguagem natural</h3>
 
               <p>
                 A inteligência artificial interpreta o processo e propõe os
@@ -290,9 +258,7 @@ export function SpreadsheetCaseStudy() {
             </article>
 
             <article className="case-panel">
-              <h3>
-                Validação inteligente
-              </h3>
+              <h3>Validação inteligente</h3>
 
               <p>
                 Toda resposta da IA é tratada como potencialmente incorreta
@@ -303,9 +269,7 @@ export function SpreadsheetCaseStudy() {
             </article>
 
             <article className="case-panel">
-              <h3>
-                Revisão antes da aplicação
-              </h3>
+              <h3>Revisão antes da aplicação</h3>
 
               <p>
                 O sistema apresenta um resumo da estrutura para que o usuário
@@ -316,9 +280,7 @@ export function SpreadsheetCaseStudy() {
             </article>
 
             <article className="case-panel">
-              <h3>
-                Relatório de qualidade
-              </h3>
+              <h3>Relatório de qualidade</h3>
 
               <p>
                 Antes do download, a estrutura passa por uma análise interna e
@@ -326,17 +288,11 @@ export function SpreadsheetCaseStudy() {
               </p>
 
               <ul className="quality-list">
-                <li className="quality-ready">
-                  Pronto para baixar
-                </li>
+                <li className="quality-ready">Pronto para baixar</li>
 
-                <li className="quality-warning">
-                  Pronto com avisos
-                </li>
+                <li className="quality-warning">Pronto com avisos</li>
 
-                <li className="quality-blocked">
-                  Download bloqueado
-                </li>
+                <li className="quality-blocked">Download bloqueado</li>
               </ul>
             </article>
           </div>
@@ -346,30 +302,22 @@ export function SpreadsheetCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Exportação
-            </p>
+            <p className="eyebrow">Exportação</p>
 
-            <h2>
-              Arquivo Excel editável
-            </h2>
+            <h2>Arquivo Excel editável</h2>
 
             <p>
-              O objetivo não é produzir apenas uma visualização, mas entregar
-              um arquivo que possa ser utilizado e ampliado no dia a dia.
+              O objetivo não é produzir apenas uma visualização, mas entregar um
+              arquivo que possa ser utilizado e ampliado no dia a dia.
             </p>
 
             <FeatureList items={excelFeatures} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Casos de uso
-            </p>
+            <p className="eyebrow">Casos de uso</p>
 
-            <h2>
-              Estruturas adaptadas ao contexto
-            </h2>
+            <h2>Estruturas adaptadas ao contexto</h2>
 
             <FeatureList items={useCases} />
           </article>
@@ -379,20 +327,14 @@ export function SpreadsheetCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Diferenciais
-            </p>
+            <p className="eyebrow">Diferenciais</p>
 
-            <h2>
-              Transparência, segurança e flexibilidade
-            </h2>
+            <h2>Transparência, segurança e flexibilidade</h2>
           </div>
 
           <div className="grid grid-4">
             <article className="card">
-              <h3>
-                Transparência
-              </h3>
+              <h3>Transparência</h3>
 
               <p>
                 As fórmulas utilizadas são documentadas e apresentadas ao
@@ -401,9 +343,7 @@ export function SpreadsheetCaseStudy() {
             </article>
 
             <article className="card">
-              <h3>
-                Segurança
-              </h3>
+              <h3>Segurança</h3>
 
               <p>
                 A estrutura gerada passa por camadas de validação antes da
@@ -412,9 +352,7 @@ export function SpreadsheetCaseStudy() {
             </article>
 
             <article className="card">
-              <h3>
-                Flexibilidade
-              </h3>
+              <h3>Flexibilidade</h3>
 
               <p>
                 Cada planilha é criada a partir do contexto informado, sem
@@ -423,9 +361,7 @@ export function SpreadsheetCaseStudy() {
             </article>
 
             <article className="card">
-              <h3>
-                Excel real
-              </h3>
+              <h3>Excel real</h3>
 
               <p>
                 O resultado é um arquivo editável, preparado para utilização e
@@ -439,31 +375,21 @@ export function SpreadsheetCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Tecnologias
-            </p>
+            <p className="eyebrow">Tecnologias</p>
 
-            <h2>
-              Tecnologias utilizadas
-            </h2>
+            <h2>Tecnologias utilizadas</h2>
 
             <ul className="tech-list case-tech-list">
               {technologies.map((technology) => (
-                <li key={technology}>
-                  {technology}
-                </li>
+                <li key={technology}>{technology}</li>
               ))}
             </ul>
           </article>
 
           <article>
-            <p className="eyebrow">
-              Meu papel
-            </p>
+            <p className="eyebrow">Meu papel</p>
 
-            <h2>
-              Atuação em todas as etapas
-            </h2>
+            <h2>Atuação em todas as etapas</h2>
 
             <FeatureList items={responsibilities} />
 
@@ -479,13 +405,9 @@ export function SpreadsheetCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Status
-            </p>
+            <p className="eyebrow">Status</p>
 
-            <h2>
-              Protótipo funcional em desenvolvimento
-            </h2>
+            <h2>Protótipo funcional em desenvolvimento</h2>
 
             <p>
               A solução já pode ser utilizada em demonstrações, aprendizado,
@@ -493,24 +415,18 @@ export function SpreadsheetCaseStudy() {
             </p>
 
             <p>
-              O acesso público permanece desativado para evitar consumo
-              indevido da API e uso não autorizado dos recursos da plataforma.
-              Uma demonstração completa poderá ser apresentada em vídeo.
+              O acesso público permanece desativado para evitar consumo indevido
+              da API e uso não autorizado dos recursos da plataforma. Uma
+              demonstração completa poderá ser apresentada em vídeo.
             </p>
 
-            <span className="project-status-badge">
-              Em desenvolvimento
-            </span>
+            <span className="project-status-badge">Em desenvolvimento</span>
           </article>
 
           <article>
-            <p className="eyebrow">
-              Próximas evoluções
-            </p>
+            <p className="eyebrow">Próximas evoluções</p>
 
-            <h2>
-              Expansão do produto
-            </h2>
+            <h2>Expansão do produto</h2>
 
             <FeatureList items={nextSteps} />
           </article>
@@ -519,13 +435,9 @@ export function SpreadsheetCaseStudy() {
 
       <section className="section section-alt">
         <div className="container narrow result-section">
-          <p className="eyebrow">
-            Resultado
-          </p>
+          <p className="eyebrow">Resultado</p>
 
-          <h2>
-            Da descrição ao Excel estruturado
-          </h2>
+          <h2>Da descrição ao Excel estruturado</h2>
 
           <p className="case-lead">
             Uma experiência guiada que transforma uma descrição em um arquivo

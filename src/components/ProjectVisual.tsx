@@ -11,13 +11,21 @@ const categoryClass: Record<string, string> = {
   Experimental: "visual-experimental",
 };
 
-export function ProjectVisual({ project, priority = false }: { project: Project; priority?: boolean }) {
+export function ProjectVisual({
+  project,
+  priority = false,
+}: {
+  project: Project;
+  priority?: boolean;
+}) {
   if (project.image) {
     return (
       <div className="project-visual project-image">
         <Image
           src={project.image}
-          alt={project.imageAlt ?? `Captura de tela do projeto ${project.title}`}
+          alt={
+            project.imageAlt ?? `Captura de tela do projeto ${project.title}`
+          }
           fill
           priority={priority}
           sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw"
@@ -35,7 +43,10 @@ export function ProjectVisual({ project, priority = false }: { project: Project;
     .toUpperCase();
 
   return (
-    <div className={`project-visual ${categoryClass[project.category] ?? "visual-default"}`} aria-hidden="true">
+    <div
+      className={`project-visual ${categoryClass[project.category] ?? "visual-default"}`}
+      aria-hidden="true"
+    >
       <span className="visual-grid" />
       <span className="visual-mark">{initials}</span>
       <span className="visual-label">{project.category}</span>

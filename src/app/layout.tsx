@@ -59,6 +59,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR"><body><a className="skip-link" href="#conteúdo">Pular para o conteúdo</a><Navbar /><main id="conteúdo">{children}</main><Footer /></body></html>;
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="pt-BR">
+      <body>
+        <a className="skip-link" href="#conteúdo">
+          Pular para o conteúdo
+        </a>
+        <Navbar />
+        <main id="conteúdo">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
 }

@@ -33,15 +33,9 @@ const identificationSections = [
   "Dados de contato",
 ];
 
-const professionalSections = [
-  "Objetivo profissional",
-  "Resumo profissional",
-];
+const professionalSections = ["Objetivo profissional", "Resumo profissional"];
 
-const careerSections = [
-  "Experiência profissional",
-  "Formação acadêmica",
-];
+const careerSections = ["Experiência profissional", "Formação acadêmica"];
 
 const knowledgeSections = [
   "Habilidades técnicas",
@@ -170,17 +164,11 @@ const nextSteps = [
   "Melhorar o tratamento de currículos com várias páginas",
 ];
 
-function FeatureList({
-  items,
-}: {
-  items: string[];
-}) {
+function FeatureList({ items }: { items: string[] }) {
   return (
     <ul className="feature-list">
       {items.map((item) => (
-        <li key={item}>
-          {item}
-        </li>
+        <li key={item}>{item}</li>
       ))}
     </ul>
   );
@@ -191,9 +179,7 @@ export function ProfessionalResumeCaseStudy() {
     <>
       <section className="section">
         <div className="container narrow">
-          <p className="eyebrow">
-            Currículos Profissionais
-          </p>
+          <p className="eyebrow">Currículos Profissionais</p>
 
           <h2>
             Criação de currículos simples, gratuita e sem cadastro obrigatório
@@ -223,17 +209,13 @@ export function ProfessionalResumeCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Problema
-            </p>
+            <p className="eyebrow">Problema</p>
 
-            <h2>
-              Ferramentas gratuitas nem sempre são realmente gratuitas
-            </h2>
+            <h2>Ferramentas gratuitas nem sempre são realmente gratuitas</h2>
 
             <p>
-              Algumas plataformas permitem preencher o currículo sem custo,
-              mas exigem pagamento no momento do download. Outras restringem
+              Algumas plataformas permitem preencher o currículo sem custo, mas
+              exigem pagamento no momento do download. Outras restringem
               recursos importantes, exigem cadastro ou apresentam publicidade
               que interfere na experiência.
             </p>
@@ -246,13 +228,9 @@ export function ProfessionalResumeCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Solução
-            </p>
+            <p className="eyebrow">Solução</p>
 
-            <h2>
-              Uma alternativa direta e transparente
-            </h2>
+            <h2>Uma alternativa direta e transparente</h2>
 
             <p>
               Desenvolvi uma aplicação executada no navegador que organiza o
@@ -271,13 +249,9 @@ export function ProfessionalResumeCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Fluxo de utilização
-            </p>
+            <p className="eyebrow">Fluxo de utilização</p>
 
-            <h2>
-              Do preenchimento ao currículo exportado
-            </h2>
+            <h2>Do preenchimento ao currículo exportado</h2>
 
             <p>
               A experiência foi planejada para manter o usuário no controle
@@ -288,13 +262,9 @@ export function ProfessionalResumeCaseStudy() {
           <ol className="case-flow">
             {creationFlow.map((step, index) => (
               <li key={step}>
-                <span>
-                  {String(index + 1).padStart(2, "0")}
-                </span>
+                <span>{String(index + 1).padStart(2, "0")}</span>
 
-                <strong>
-                  {step}
-                </strong>
+                <strong>{step}</strong>
               </li>
             ))}
           </ol>
@@ -304,13 +274,9 @@ export function ProfessionalResumeCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Principais funcionalidades
-            </p>
+            <p className="eyebrow">Principais funcionalidades</p>
 
-            <h2>
-              Recursos para criar e atualizar o currículo
-            </h2>
+            <h2>Recursos para criar e atualizar o currículo</h2>
           </div>
 
           <div className="case-panel">
@@ -322,13 +288,9 @@ export function ProfessionalResumeCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Estrutura do currículo
-            </p>
+            <p className="eyebrow">Estrutura do currículo</p>
 
-            <h2>
-              Informações organizadas por finalidade
-            </h2>
+            <h2>Informações organizadas por finalidade</h2>
 
             <p>
               Somente as seções preenchidas são exibidas na pré-visualização e
@@ -338,33 +300,25 @@ export function ProfessionalResumeCaseStudy() {
 
           <div className="grid grid-4">
             <article className="card">
-              <h3>
-                Identificação
-              </h3>
+              <h3>Identificação</h3>
 
               <FeatureList items={identificationSections} />
             </article>
 
             <article className="card">
-              <h3>
-                Apresentação
-              </h3>
+              <h3>Apresentação</h3>
 
               <FeatureList items={professionalSections} />
             </article>
 
             <article className="card">
-              <h3>
-                Trajetória
-              </h3>
+              <h3>Trajetória</h3>
 
               <FeatureList items={careerSections} />
             </article>
 
             <article className="card">
-              <h3>
-                Conhecimentos
-              </h3>
+              <h3>Conhecimentos</h3>
 
               <FeatureList items={knowledgeSections} />
             </article>
@@ -375,13 +329,9 @@ export function ProfessionalResumeCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Pré-visualização
-            </p>
+            <p className="eyebrow">Pré-visualização</p>
 
-            <h2>
-              Revisão antes da exportação
-            </h2>
+            <h2>Revisão antes da exportação</h2>
 
             <p>
               Enquanto o formulário é preenchido, o currículo é atualizado na
@@ -393,13 +343,9 @@ export function ProfessionalResumeCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Exportação em PDF
-            </p>
+            <p className="eyebrow">Exportação em PDF</p>
 
-            <h2>
-              Um documento pronto para utilização
-            </h2>
+            <h2>Um documento pronto para utilização</h2>
 
             <p>
               A aplicação utiliza a biblioteca jsPDF para montar o currículo.
@@ -418,13 +364,9 @@ export function ProfessionalResumeCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Continuidade
-            </p>
+            <p className="eyebrow">Continuidade</p>
 
-            <h2>
-              Exportação e importação em TXT
-            </h2>
+            <h2>Exportação e importação em TXT</h2>
 
             <p>
               O usuário pode salvar os dados preenchidos em um arquivo TXT e
@@ -442,13 +384,9 @@ export function ProfessionalResumeCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Privacidade
-            </p>
+            <p className="eyebrow">Privacidade</p>
 
-            <h2>
-              Os dados permanecem sob controle do usuário
-            </h2>
+            <h2>Os dados permanecem sob controle do usuário</h2>
 
             <FeatureList
               items={[
@@ -471,36 +409,25 @@ export function ProfessionalResumeCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Evolução do produto
-            </p>
+            <p className="eyebrow">Evolução do produto</p>
 
-            <h2>
-              Simplificar também significa remover
-            </h2>
+            <h2>Simplificar também significa remover</h2>
           </div>
 
           <div className="grid grid-3">
             {evolutionItems.map((item) => (
-              <article
-                className="case-panel"
-                key={item.title}
-              >
-                <h3>
-                  {item.title}
-                </h3>
+              <article className="case-panel" key={item.title}>
+                <h3>{item.title}</h3>
 
-                <p>
-                  {item.description}
-                </p>
+                <p>{item.description}</p>
               </article>
             ))}
           </div>
 
           <blockquote className="case-highlight">
-            Uma funcionalidade não deve permanecer apenas porque é
-            tecnicamente possível. Ela precisa contribuir de forma clara para
-            a experiência do usuário.
+            Uma funcionalidade não deve permanecer apenas porque é tecnicamente
+            possível. Ela precisa contribuir de forma clara para a experiência
+            do usuário.
           </blockquote>
         </div>
       </section>
@@ -508,28 +435,17 @@ export function ProfessionalResumeCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Diferenciais
-            </p>
+            <p className="eyebrow">Diferenciais</p>
 
-            <h2>
-              Uma experiência previsível e sem etapas ocultas
-            </h2>
+            <h2>Uma experiência previsível e sem etapas ocultas</h2>
           </div>
 
           <div className="grid grid-3">
             {differences.map((difference) => (
-              <article
-                className="card"
-                key={difference.title}
-              >
-                <h3>
-                  {difference.title}
-                </h3>
+              <article className="card" key={difference.title}>
+                <h3>{difference.title}</h3>
 
-                <p>
-                  {difference.description}
-                </p>
+                <p>{difference.description}</p>
               </article>
             ))}
           </div>
@@ -539,30 +455,22 @@ export function ProfessionalResumeCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Meu papel
-            </p>
+            <p className="eyebrow">Meu papel</p>
 
-            <h2>
-              Da identificação do problema à publicação
-            </h2>
+            <h2>Da identificação do problema à publicação</h2>
 
             <FeatureList items={responsibilities} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Uso da IA
-            </p>
+            <p className="eyebrow">Uso da IA</p>
 
-            <h2>
-              Desenvolvimento assistido com validação humana
-            </h2>
+            <h2>Desenvolvimento assistido com validação humana</h2>
 
             <p>
-              A inteligência artificial foi utilizada como apoio na
-              estruturação do código, investigação de problemas, revisão da
-              interface e implementação inicial de funcionalidades.
+              A inteligência artificial foi utilizada como apoio na estruturação
+              do código, investigação de problemas, revisão da interface e
+              implementação inicial de funcionalidades.
             </p>
 
             <p className="callout">
@@ -577,31 +485,21 @@ export function ProfessionalResumeCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Tecnologias
-            </p>
+            <p className="eyebrow">Tecnologias</p>
 
-            <h2>
-              Tecnologias utilizadas
-            </h2>
+            <h2>Tecnologias utilizadas</h2>
 
             <ul className="tech-list case-tech-list">
               {technologies.map((technology) => (
-                <li key={technology}>
-                  {technology}
-                </li>
+                <li key={technology}>{technology}</li>
               ))}
             </ul>
           </article>
 
           <article>
-            <p className="eyebrow">
-              Status
-            </p>
+            <p className="eyebrow">Status</p>
 
-            <h2>
-              Aplicação funcional e disponível
-            </h2>
+            <h2>Aplicação funcional e disponível</h2>
 
             <p>
               A ferramenta permite preencher, revisar, exportar e recuperar os
@@ -623,25 +521,17 @@ export function ProfessionalResumeCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Limitações atuais
-            </p>
+            <p className="eyebrow">Limitações atuais</p>
 
-            <h2>
-              Transparência sobre o escopo
-            </h2>
+            <h2>Transparência sobre o escopo</h2>
 
             <FeatureList items={limitations} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Próximas melhorias
-            </p>
+            <p className="eyebrow">Próximas melhorias</p>
 
-            <h2>
-              Personalização, acessibilidade e continuidade
-            </h2>
+            <h2>Personalização, acessibilidade e continuidade</h2>
 
             <FeatureList items={nextSteps} />
           </article>
@@ -650,18 +540,14 @@ export function ProfessionalResumeCaseStudy() {
 
       <section className="section">
         <div className="container narrow result-section">
-          <p className="eyebrow">
-            Resultado
-          </p>
+          <p className="eyebrow">Resultado</p>
 
-          <h2>
-            Uma dificuldade pessoal transformada em ferramenta
-          </h2>
+          <h2>Uma dificuldade pessoal transformada em ferramenta</h2>
 
           <p className="case-lead">
-            O projeto transformou uma dificuldade encontrada durante minha
-            busca por emprego em uma solução funcional que também pode apoiar
-            outras pessoas.
+            O projeto transformou uma dificuldade encontrada durante minha busca
+            por emprego em uma solução funcional que também pode apoiar outras
+            pessoas.
           </p>
 
           <div

@@ -28,18 +28,15 @@ const mainFeatures = [
 const commands = [
   {
     command: "Clique simples",
-    description:
-      "Seleciona ou desseleciona uma forma no espaço de trabalho.",
+    description: "Seleciona ou desseleciona uma forma no espaço de trabalho.",
   },
   {
     command: "Shift + clique",
-    description:
-      "Abre o seletor para alterar individualmente a cor da forma.",
+    description: "Abre o seletor para alterar individualmente a cor da forma.",
   },
   {
     command: "Botão direito",
-    description:
-      "Permite renomear o texto apresentado dentro da forma.",
+    description: "Permite renomear o texto apresentado dentro da forma.",
   },
   {
     command: "Arrastar",
@@ -53,18 +50,15 @@ const commands = [
   },
   {
     command: "Conectar selecionados",
-    description:
-      "Cria uma seta que aponta para a última forma selecionada.",
+    description: "Cria uma seta que aponta para a última forma selecionada.",
   },
   {
     command: "Excluir selecionado",
-    description:
-      "Remove a forma atualmente selecionada.",
+    description: "Remove a forma atualmente selecionada.",
   },
   {
     command: "Salvar em PNG",
-    description:
-      "Exporta o diagrama criado como um arquivo de imagem.",
+    description: "Exporta o diagrama criado como um arquivo de imagem.",
   },
 ];
 
@@ -175,17 +169,11 @@ const nextSteps = [
   "Melhorar a experiência em dispositivos móveis",
 ];
 
-function FeatureList({
-  items,
-}: {
-  items: string[];
-}) {
+function FeatureList({ items }: { items: string[] }) {
   return (
     <ul className="feature-list">
       {items.map((item) => (
-        <li key={item}>
-          {item}
-        </li>
+        <li key={item}>{item}</li>
       ))}
     </ul>
   );
@@ -196,13 +184,9 @@ export function DiagramGeneratorCaseStudy() {
     <>
       <section className="section">
         <div className="container narrow">
-          <p className="eyebrow">
-            Gerador de Diagramas
-          </p>
+          <p className="eyebrow">Gerador de Diagramas</p>
 
-          <h2>
-            Criação visual de fluxos diretamente no navegador
-          </h2>
+          <h2>Criação visual de fluxos diretamente no navegador</h2>
 
           <p className="case-lead">
             Um editor simples para criar blocos, organizar processos, conectar
@@ -232,17 +216,13 @@ export function DiagramGeneratorCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Problema
-            </p>
+            <p className="eyebrow">Problema</p>
 
-            <h2>
-              Uma atividade acadêmica precisava de representação visual
-            </h2>
+            <h2>Uma atividade acadêmica precisava de representação visual</h2>
 
             <p>
-              A atividade extensionista exigia a criação de um diagrama capaz
-              de comunicar etapas, relações e sequência de um processo.
+              A atividade extensionista exigia a criação de um diagrama capaz de
+              comunicar etapas, relações e sequência de um processo.
             </p>
 
             <p>
@@ -254,13 +234,9 @@ export function DiagramGeneratorCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Solução
-            </p>
+            <p className="eyebrow">Solução</p>
 
-            <h2>
-              Um editor direto para montar e exportar fluxos
-            </h2>
+            <h2>Um editor direto para montar e exportar fluxos</h2>
 
             <p>
               Desenvolvi uma aplicação web que permite adicionar formas,
@@ -279,13 +255,9 @@ export function DiagramGeneratorCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Fluxo de utilização
-            </p>
+            <p className="eyebrow">Fluxo de utilização</p>
 
-            <h2>
-              Da primeira forma ao diagrama exportado
-            </h2>
+            <h2>Da primeira forma ao diagrama exportado</h2>
 
             <p>
               O processo de criação foi organizado para permitir que o usuário
@@ -296,13 +268,9 @@ export function DiagramGeneratorCaseStudy() {
           <ol className="case-flow">
             {creationFlow.map((step, index) => (
               <li key={step}>
-                <span>
-                  {String(index + 1).padStart(2, "0")}
-                </span>
+                <span>{String(index + 1).padStart(2, "0")}</span>
 
-                <strong>
-                  {step}
-                </strong>
+                <strong>{step}</strong>
               </li>
             ))}
           </ol>
@@ -312,13 +280,9 @@ export function DiagramGeneratorCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Principais funcionalidades
-            </p>
+            <p className="eyebrow">Principais funcionalidades</p>
 
-            <h2>
-              Recursos essenciais para construir o fluxo
-            </h2>
+            <h2>Recursos essenciais para construir o fluxo</h2>
           </div>
 
           <div className="case-panel">
@@ -330,13 +294,9 @@ export function DiagramGeneratorCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Interação
-            </p>
+            <p className="eyebrow">Interação</p>
 
-            <h2>
-              Comandos diretos no espaço de trabalho
-            </h2>
+            <h2>Comandos diretos no espaço de trabalho</h2>
 
             <p>
               As principais ações são executadas com o mouse e combinações
@@ -346,17 +306,10 @@ export function DiagramGeneratorCaseStudy() {
 
           <div className="grid grid-2">
             {commands.map((item) => (
-              <article
-                className="diagram-command-card"
-                key={item.command}
-              >
-                <span className="diagram-command-name">
-                  {item.command}
-                </span>
+              <article className="diagram-command-card" key={item.command}>
+                <span className="diagram-command-name">{item.command}</span>
 
-                <p>
-                  {item.description}
-                </p>
+                <p>{item.description}</p>
               </article>
             ))}
           </div>
@@ -366,13 +319,9 @@ export function DiagramGeneratorCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Formas e blocos
-            </p>
+            <p className="eyebrow">Formas e blocos</p>
 
-            <h2>
-              Elementos visualmente adaptáveis
-            </h2>
+            <h2>Elementos visualmente adaptáveis</h2>
 
             <p>
               O usuário pode incluir retângulos e círculos para representar
@@ -387,13 +336,9 @@ export function DiagramGeneratorCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Conexões
-            </p>
+            <p className="eyebrow">Conexões</p>
 
-            <h2>
-              Relações representadas por setas direcionais
-            </h2>
+            <h2>Relações representadas por setas direcionais</h2>
 
             <p>
               Para criar uma conexão, o usuário seleciona duas formas e utiliza
@@ -411,28 +356,17 @@ export function DiagramGeneratorCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Personalização
-            </p>
+            <p className="eyebrow">Personalização</p>
 
-            <h2>
-              Ajustes visuais sem complexidade excessiva
-            </h2>
+            <h2>Ajustes visuais sem complexidade excessiva</h2>
           </div>
 
           <div className="grid grid-3">
             {customizationResources.map((resource) => (
-              <article
-                className="card"
-                key={resource.title}
-              >
-                <h3>
-                  {resource.title}
-                </h3>
+              <article className="card" key={resource.title}>
+                <h3>{resource.title}</h3>
 
-                <p>
-                  {resource.description}
-                </p>
+                <p>{resource.description}</p>
               </article>
             ))}
           </div>
@@ -442,13 +376,9 @@ export function DiagramGeneratorCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Exportação
-            </p>
+            <p className="eyebrow">Exportação</p>
 
-            <h2>
-              Diagrama salvo como imagem PNG
-            </h2>
+            <h2>Diagrama salvo como imagem PNG</h2>
 
             <p>
               Depois de organizar os blocos e revisar as conexões, o usuário
@@ -462,12 +392,9 @@ export function DiagramGeneratorCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Reutilização
-            </p>
+            <p className="eyebrow">Reutilização</p>
 
-            <h2>
-              De uma atividade extensionista a outros trabalhos</h2>
+            <h2>De uma atividade extensionista a outros trabalhos</h2>
 
             <p>
               A primeira versão foi desenvolvida para atender uma atividade
@@ -486,13 +413,9 @@ export function DiagramGeneratorCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Casos de uso
-            </p>
+            <p className="eyebrow">Casos de uso</p>
 
-            <h2>
-              Uma ferramenta simples para diferentes representações
-            </h2>
+            <h2>Uma ferramenta simples para diferentes representações</h2>
           </div>
 
           <div className="case-panel">
@@ -504,13 +427,9 @@ export function DiagramGeneratorCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Decisão de produto
-            </p>
+            <p className="eyebrow">Decisão de produto</p>
 
-            <h2>
-              Resolver a necessidade sem reproduzir uma suíte completa
-            </h2>
+            <h2>Resolver a necessidade sem reproduzir uma suíte completa</h2>
 
             <p>
               O objetivo do projeto não foi competir com ferramentas
@@ -524,13 +443,9 @@ export function DiagramGeneratorCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Aprendizado
-            </p>
+            <p className="eyebrow">Aprendizado</p>
 
-            <h2>
-              Interações visuais exigem regras claras
-            </h2>
+            <h2>Interações visuais exigem regras claras</h2>
 
             <p>
               O desenvolvimento envolveu conceitos de seleção, movimentação,
@@ -549,30 +464,22 @@ export function DiagramGeneratorCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Meu papel
-            </p>
+            <p className="eyebrow">Meu papel</p>
 
-            <h2>
-              Da necessidade acadêmica à ferramenta reutilizável
-            </h2>
+            <h2>Da necessidade acadêmica à ferramenta reutilizável</h2>
 
             <FeatureList items={responsibilities} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Uso da IA
-            </p>
+            <p className="eyebrow">Uso da IA</p>
 
-            <h2>
-              Desenvolvimento assistido com testes práticos
-            </h2>
+            <h2>Desenvolvimento assistido com testes práticos</h2>
 
             <p>
-              A inteligência artificial foi utilizada como apoio na
-              estruturação do HTML, CSS e JavaScript, na investigação de
-              problemas e na implementação inicial das interações.
+              A inteligência artificial foi utilizada como apoio na estruturação
+              do HTML, CSS e JavaScript, na investigação de problemas e na
+              implementação inicial das interações.
             </p>
 
             <p className="callout">
@@ -587,31 +494,21 @@ export function DiagramGeneratorCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Tecnologias
-            </p>
+            <p className="eyebrow">Tecnologias</p>
 
-            <h2>
-              Tecnologias utilizadas
-            </h2>
+            <h2>Tecnologias utilizadas</h2>
 
             <ul className="tech-list case-tech-list">
               {technologies.map((technology) => (
-                <li key={technology}>
-                  {technology}
-                </li>
+                <li key={technology}>{technology}</li>
               ))}
             </ul>
           </article>
 
           <article>
-            <p className="eyebrow">
-              Status
-            </p>
+            <p className="eyebrow">Status</p>
 
-            <h2>
-              Aplicação funcional e disponível
-            </h2>
+            <h2>Aplicação funcional e disponível</h2>
 
             <p>
               A ferramenta permite criar formas, organizar blocos, conectar
@@ -633,25 +530,17 @@ export function DiagramGeneratorCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Limitações atuais
-            </p>
+            <p className="eyebrow">Limitações atuais</p>
 
-            <h2>
-              Transparência sobre o escopo
-            </h2>
+            <h2>Transparência sobre o escopo</h2>
 
             <FeatureList items={limitations} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Próximas melhorias
-            </p>
+            <p className="eyebrow">Próximas melhorias</p>
 
-            <h2>
-              Evolução da edição e da exportação
-            </h2>
+            <h2>Evolução da edição e da exportação</h2>
 
             <FeatureList items={nextSteps} />
           </article>
@@ -660,13 +549,9 @@ export function DiagramGeneratorCaseStudy() {
 
       <section className="section section-alt">
         <div className="container narrow result-section">
-          <p className="eyebrow">
-            Resultado
-          </p>
+          <p className="eyebrow">Resultado</p>
 
-          <h2>
-            Uma necessidade acadêmica transformada em ferramenta
-          </h2>
+          <h2>Uma necessidade acadêmica transformada em ferramenta</h2>
 
           <p className="case-lead">
             O Gerador de Diagramas começou como uma solução para uma atividade

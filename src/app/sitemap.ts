@@ -4,12 +4,7 @@ import { projects } from "@/data/projects";
 const baseUrl = "https://ffssportfolio.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = [
-    "",
-    "/sobre",
-    "/projetos",
-    "/contato",
-  ].map((path) => ({
+  const pages = ["", "/sobre", "/projetos", "/contato"].map((path) => ({
     url: `${baseUrl}${path}`,
     changeFrequency: "monthly" as const,
     priority: path === "" ? 1 : 0.8,

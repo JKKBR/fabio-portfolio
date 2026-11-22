@@ -11,7 +11,7 @@ import { ProfessionalResumeCaseStudy } from "@/components/ProfessionalResumeCase
 import { LogiTrackCaseStudy } from "@/components/LogiTrackCaseStudy";
 import { InventoryStoreCaseStudy } from "@/components/InventoryStoreCaseStudy";
 import { DiagramGeneratorCaseStudy } from "@/components/DiagramGeneratorCaseStudy";
-
+import { RoutePlannerCaseStudy } from "@/components/RoutePlannerCaseStudy";
 
 type ProjectPageProps = {
   params: Promise<{
@@ -41,8 +41,7 @@ export async function generateMetadata({
     };
   }
 
-const url =
-  `https://ffssportfolio.vercel.app/projetos/${project.slug}`;
+  const url = `https://ffssportfolio.vercel.app/projetos/${project.slug}`;
 
   return {
     title: project.title,
@@ -69,9 +68,7 @@ const url =
   };
 }
 
-export default async function ProjectPage({
-  params,
-}: ProjectPageProps) {
+export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
 
@@ -82,38 +79,25 @@ export default async function ProjectPage({
   return (
     <>
       <ProjectJsonLd project={project} />
-
       <header className="project-hero section">
         <div className="container narrow">
-          <Link
-            className="back-link"
-            href="/projetos"
-          >
+          <Link className="back-link" href="/projetos">
             <span aria-hidden="true">←</span> Voltar aos projetos
           </Link>
 
           <div className="project-meta">
-            <span className="tag">
-              {project.category}
-            </span>
+            <span className="tag">{project.category}</span>
 
-            <span className="status">
-              {project.status}
-            </span>
+            <span className="status">{project.status}</span>
           </div>
 
           <h1>{project.title}</h1>
 
           <p>{project.description}</p>
 
-          <ul
-            className="tech-list"
-          aria-label="Tecnologias utilizadas"
-          >
+          <ul className="tech-list" aria-label="Tecnologias utilizadas">
             {project.technologies.map((technology) => (
-              <li key={technology}>
-                {technology}
-              </li>
+              <li key={technology}>{technology}</li>
             ))}
           </ul>
 
@@ -144,107 +128,84 @@ export default async function ProjectPage({
           )}
         </div>
       </header>
+      ) : project.slug === "passaporte-produto-usado" ? (
+      <UsedProductPassportCaseStudy />
+      ) : project.slug === "cenarilog-academy" ? (
+      <CenariLogCaseStudy />
+      ) : project.slug === "curriculo-ats" ? (
+      <ProfessionalResumeCaseStudy />
+      ) : project.slug === "logitrack" ? (
+      <LogiTrackCaseStudy />
+      ) : project.slug === "sistema-inventario" ? (
+      <InventoryStoreCaseStudy />
+      ) : project.slug === "gerador-diagramas" ? (
+      <DiagramGeneratorCaseStudy />
+      ) : project.slug === "rota-a-rota" ? (
+      <RoutePlannerCaseStudy />) : (
+      <>
+        <section className="section section-alt">
+          <div className="container case-grid">
+            <article>
+              <p className="eyebrow">Problema</p>
 
-            
-{project.slug === "gerador-planilhas-ia" ? (
-  <SpreadsheetCaseStudy />
-) : project.slug === "passaporte-produto-usado" ? (
-  <UsedProductPassportCaseStudy />
-) : project.slug === "cenarilog-academy" ? (
-  <CenariLogCaseStudy />
-) : project.slug === "curriculo-ats" ? (
-  <ProfessionalResumeCaseStudy />
-) : project.slug === "logitrack" ? (
-  <LogiTrackCaseStudy />
-) : project.slug === "sistema-inventario" ? (
-  <InventoryStoreCaseStudy />
-) : project.slug === "gerador-diagramas" ? (
-  <DiagramGeneratorCaseStudy />
-) : (
-  
-        <>
+              <h2>O contexto</h2>
+
+              <p>{project.problem}</p>
+            </article>
+
+            <article>
+              <p className="eyebrow">Solução</p>
+
+              <h2>A proposta</h2>
+
+              <p>{project.solution}</p>
+            </article>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container case-grid">
+            <article>
+              <p className="eyebrow">Meu papel</p>
+
+              <h2>Responsabilidades</h2>
+
+              <p>{project.role}</p>
+
+              {project.aiUse && <p className="callout">{project.aiUse}</p>}
+            </article>
+
+            <article>
+              <p className="eyebrow">Recursos</p>
+
+              <h2>Principais entregas</h2>
+
+              <ul className="feature-list">
+                {project.resources.map((resource) => (
+                  <li key={resource}>{resource}</li>
+                ))}
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        {project.nextSteps && project.nextSteps.length > 0 && (
           <section className="section section-alt">
-            <div className="container case-grid">
-              <article>
-                <p className="eyebrow">
-                  Problema
-                </p>
+            <div className="container narrow">
+              <p className="eyebrow">Evolução</p>
 
-                <h2>O contexto</h2>
+              <h2>Próximas melhorias</h2>
 
-                <p>{project.problem}</p>
-              </article>
-
-              <article>
-                <p className="eyebrow">
-                  Solução
-                </p>
-
-                <h2>A proposta</h2>
-
-                <p>{project.solution}</p>
-              </article>
+              <ul className="feature-list">
+                {project.nextSteps.map((step) => (
+                  <li key={step}>{step}</li>
+                ))}
+              </ul>
             </div>
           </section>
-
-          <section className="section">
-            <div className="container case-grid">
-              <article>
-                <p className="eyebrow">
-                  Meu papel
-                </p>
-
-                <h2>Responsabilidades</h2>
-
-                <p>{project.role}</p>
-
-                {project.aiUse && (
-                  <p className="callout">
-                    {project.aiUse}
-                  </p>
-                )}
-              </article>
-
-              <article>
-                <p className="eyebrow">
-                  Recursos
-                </p>
-
-                <h2>Principais entregas</h2>
-
-                <ul className="feature-list">
-                  {project.resources.map((resource) => (
-                    <li key={resource}>
-                      {resource}
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            </div>
-          </section>
-
-          {project.nextSteps &&
-            project.nextSteps.length > 0 && (
-              <section className="section section-alt">
-                <div className="container narrow">
-                  <p className="eyebrow">
-                    Evolução
-                  </p>
-
-                  <h2>Próximas melhorias</h2>
-
-                  <ul className="feature-list">
-                    {project.nextSteps.map((step) => (
-                      <li key={step}>
-                        {step}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </section>
-            )}
-        </>
-      )}
+        )}
+      </>
+      )
     </>
   );
 }

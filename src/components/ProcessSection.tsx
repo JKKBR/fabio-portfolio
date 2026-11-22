@@ -1,2 +1,25 @@
 const steps = ["Identificar", "Entender", "Prototipar", "Validar", "Evoluir"];
-export function ProcessSection() { return <section className="section"><div className="container"><div className="section-heading"><p className="eyebrow">Como eu desenvolvo</p><h2>Da necessidade a uma solucao testavel</h2><p>Desenvolvimento assistido por IA, com revisao humana, validação pratica e testes automatizados.</p></div><ol className="process-list">{steps.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><strong>{step}</strong></li>)}</ol></div></section>; }
+export function ProcessSection() {
+  return (
+    <section className="section">
+      <div className="container">
+        <div className="section-heading">
+          <p className="eyebrow">Como eu desenvolvo</p>
+          <h2>Da necessidade a uma solucao testavel</h2>
+          <p>
+            Desenvolvimento assistido por IA, com revisao humana, validação
+            pratica e testes automatizados.
+          </p>
+        </div>
+        <ol className="process-list">
+          {steps.map((step, index) => (
+            <li key={step}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <strong>{step}</strong>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  );
+}

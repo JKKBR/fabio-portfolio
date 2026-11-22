@@ -16,18 +16,15 @@ const indicators = [
   },
   {
     name: "OTD",
-    description:
-      "Percentual de pedidos entregues dentro do prazo acordado.",
+    description: "Percentual de pedidos entregues dentro do prazo acordado.",
   },
   {
     name: "Fill Rate",
-    description:
-      "Percentual das unidades solicitadas que foram atendidas.",
+    description: "Percentual das unidades solicitadas que foram atendidas.",
   },
   {
     name: "Ruptura",
-    description:
-      "Percentual da demanda que não pôde ser atendida.",
+    description: "Percentual da demanda que não pôde ser atendida.",
   },
   {
     name: "Giro de estoque",
@@ -36,8 +33,7 @@ const indicators = [
   },
   {
     name: "Lead time",
-    description:
-      "Tempo médio necessário para concluir uma etapa ou processo.",
+    description: "Tempo médio necessário para concluir uma etapa ou processo.",
   },
   {
     name: "Acuracidade",
@@ -268,17 +264,11 @@ const nextSteps = [
   "Criar novas formas de exportação e compartilhamento",
 ];
 
-function FeatureList({
-  items,
-}: {
-  items: string[];
-}) {
+function FeatureList({ items }: { items: string[] }) {
   return (
     <ul className="feature-list">
       {items.map((item) => (
-        <li key={item}>
-          {item}
-        </li>
+        <li key={item}>{item}</li>
       ))}
     </ul>
   );
@@ -289,18 +279,14 @@ export function CenariLogCaseStudy() {
     <>
       <section className="section">
         <div className="container narrow">
-          <p className="eyebrow">
-            CenariLog Academy
-          </p>
+          <p className="eyebrow">CenariLog Academy</p>
 
-          <h2>
-            Aprenda logística simulando indicadores, cenários e decisões
-          </h2>
+          <h2>Aprenda logística simulando indicadores, cenários e decisões</h2>
 
           <p className="case-lead">
-            Um ambiente educacional criado para ajudar estudantes, iniciantes
-            e profissionais em formação a compreender como diferentes
-            variáveis afetam uma operação logística.
+            Um ambiente educacional criado para ajudar estudantes, iniciantes e
+            profissionais em formação a compreender como diferentes variáveis
+            afetam uma operação logística.
           </p>
 
           <p>
@@ -315,8 +301,8 @@ export function CenariLogCaseStudy() {
 
           <p>
             O simulador não substitui ERP, WMS, TMS, inventário físico ou
-            análise profissional. Sua finalidade é criar um ambiente seguro
-            para testar hipóteses e desenvolver raciocínio logístico.
+            análise profissional. Sua finalidade é criar um ambiente seguro para
+            testar hipóteses e desenvolver raciocínio logístico.
           </p>
         </div>
       </section>
@@ -324,19 +310,14 @@ export function CenariLogCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Problema
-            </p>
+            <p className="eyebrow">Problema</p>
 
-            <h2>
-              Indicadores isolados dificultam a compreensão
-            </h2>
+            <h2>Indicadores isolados dificultam a compreensão</h2>
 
             <p>
-              Indicadores logísticos costumam ser apresentados separadamente
-              em aulas, materiais teóricos e planilhas. Isso dificulta
-              visualizar como uma única decisão pode afetar diferentes áreas
-              da operação.
+              Indicadores logísticos costumam ser apresentados separadamente em
+              aulas, materiais teóricos e planilhas. Isso dificulta visualizar
+              como uma única decisão pode afetar diferentes áreas da operação.
             </p>
 
             <p>
@@ -347,13 +328,9 @@ export function CenariLogCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Solução
-            </p>
+            <p className="eyebrow">Solução</p>
 
-            <h2>
-              Um laboratório de simulação logística
-            </h2>
+            <h2>Um laboratório de simulação logística</h2>
 
             <p>
               O CenariLog Academy reúne dados, indicadores, metas, produtos,
@@ -361,8 +338,8 @@ export function CenariLogCaseStudy() {
             </p>
 
             <p>
-              O cenário não afirma que um resultado acontecerá. Ele apresenta
-              o efeito matemático esperado caso as condições informadas sejam
+              O cenário não afirma que um resultado acontecerá. Ele apresenta o
+              efeito matemático esperado caso as condições informadas sejam
               alcançadas.
             </p>
           </article>
@@ -372,31 +349,23 @@ export function CenariLogCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Fluxo de aprendizagem
-            </p>
+            <p className="eyebrow">Fluxo de aprendizagem</p>
 
-            <h2>
-              Da leitura dos dados à conclusão da experiência
-            </h2>
+            <h2>Da leitura dos dados à conclusão da experiência</h2>
 
             <p>
               Nas primeiras simulações, a recomendação é alterar somente uma
-              variável por vez. Isso facilita identificar qual mudança
-              provocou determinado efeito.
+              variável por vez. Isso facilita identificar qual mudança provocou
+              determinado efeito.
             </p>
           </div>
 
           <ol className="case-flow">
             {learningFlow.map((step, index) => (
               <li key={step}>
-                <span>
-                  {String(index + 1).padStart(2, "0")}
-                </span>
+                <span>{String(index + 1).padStart(2, "0")}</span>
 
-                <strong>
-                  {step}
-                </strong>
+                <strong>{step}</strong>
               </li>
             ))}
           </ol>
@@ -406,13 +375,9 @@ export function CenariLogCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Indicadores
-            </p>
+            <p className="eyebrow">Indicadores</p>
 
-            <h2>
-              Serviço, estoque, prazo, custo e qualidade
-            </h2>
+            <h2>Serviço, estoque, prazo, custo e qualidade</h2>
 
             <p>
               A proposta não é avaliar uma operação por apenas um número, mas
@@ -423,17 +388,10 @@ export function CenariLogCaseStudy() {
 
           <div className="grid grid-4">
             {indicators.map((indicator) => (
-              <article
-                className="card"
-                key={indicator.name}
-              >
-                <h3>
-                  {indicator.name}
-                </h3>
+              <article className="card" key={indicator.name}>
+                <h3>{indicator.name}</h3>
 
-                <p>
-                  {indicator.description}
-                </p>
+                <p>{indicator.description}</p>
               </article>
             ))}
           </div>
@@ -443,47 +401,28 @@ export function CenariLogCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Evolução do projeto
-            </p>
+            <p className="eyebrow">Evolução do projeto</p>
 
-            <h2>
-              De painel de indicadores a laboratório educacional
-            </h2>
+            <h2>De painel de indicadores a laboratório educacional</h2>
           </div>
 
           <div className="version-list">
             {versions.map((version) => (
-              <article
-                className="version-card"
-                key={version.version}
-              >
+              <article className="version-card" key={version.version}>
                 <div className="version-card-heading">
-                  <span className="tag">
-                    {version.version}
-                  </span>
+                  <span className="tag">{version.version}</span>
 
-                  <h3>
-                    {version.title}
-                  </h3>
+                  <h3>{version.title}</h3>
                 </div>
 
-                <p>
-                  {version.description}
-                </p>
+                <p>{version.description}</p>
 
-                <FeatureList
-                  items={version.resources}
-                />
+                <FeatureList items={version.resources} />
 
                 <div className="version-learning">
-                  <strong>
-                    Aprendizado principal
-                  </strong>
+                  <strong>Aprendizado principal</strong>
 
-                  <p>
-                    {version.learning}
-                  </p>
+                  <p>{version.learning}</p>
                 </div>
               </article>
             ))}
@@ -494,28 +433,17 @@ export function CenariLogCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Módulos
-            </p>
+            <p className="eyebrow">Módulos</p>
 
-            <h2>
-              Recursos conectados em uma experiência única
-            </h2>
+            <h2>Recursos conectados em uma experiência única</h2>
           </div>
 
           <div className="grid grid-2">
             {modules.map((module) => (
-              <article
-                className="case-panel"
-                key={module.title}
-              >
-                <h3>
-                  {module.title}
-                </h3>
+              <article className="case-panel" key={module.title}>
+                <h3>{module.title}</h3>
 
-                <p>
-                  {module.description}
-                </p>
+                <p>{module.description}</p>
               </article>
             ))}
           </div>
@@ -525,33 +453,23 @@ export function CenariLogCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Validação
-            </p>
+            <p className="eyebrow">Validação</p>
 
-            <h2>
-              Regras de consistência antes da interpretação
-            </h2>
+            <h2>Regras de consistência antes da interpretação</h2>
 
             <p>
-              Toda simulação precisa respeitar relações básicas entre os
-              dados. Quando uma inconsistência é identificada, o cenário deve
-              ser corrigido antes de ser salvo ou analisado.
+              Toda simulação precisa respeitar relações básicas entre os dados.
+              Quando uma inconsistência é identificada, o cenário deve ser
+              corrigido antes de ser salvo ou analisado.
             </p>
 
-            <FeatureList
-              items={validationRules}
-            />
+            <FeatureList items={validationRules} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Salvamento e backup
-            </p>
+            <p className="eyebrow">Salvamento e backup</p>
 
-            <h2>
-              Continuidade das experiências
-            </h2>
+            <h2>Continuidade das experiências</h2>
 
             <p>
               Os cenários podem ser armazenados localmente no navegador,
@@ -579,13 +497,9 @@ export function CenariLogCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Decisões operacionais
-            </p>
+            <p className="eyebrow">Decisões operacionais</p>
 
-            <h2>
-              Benefícios e contrapartidas
-            </h2>
+            <h2>Benefícios e contrapartidas</h2>
 
             <p>
               As decisões representam hipóteses didáticas. Elas ajudam a
@@ -596,22 +510,15 @@ export function CenariLogCaseStudy() {
 
           <div className="decision-grid">
             {decisions.map((decision) => (
-              <article
-                className="decision-card"
-                key={decision.title}
-              >
-                <h3>
-                  {decision.title}
-                </h3>
+              <article className="decision-card" key={decision.title}>
+                <h3>{decision.title}</h3>
 
                 <div>
                   <span className="decision-label benefit-label">
                     Possível benefício
                   </span>
 
-                  <p>
-                    {decision.benefit}
-                  </p>
+                  <p>{decision.benefit}</p>
                 </div>
 
                 <div>
@@ -619,9 +526,7 @@ export function CenariLogCaseStudy() {
                     Possível contrapartida
                   </span>
 
-                  <p>
-                    {decision.tradeoff}
-                  </p>
+                  <p>{decision.tradeoff}</p>
                 </div>
               </article>
             ))}
@@ -632,27 +537,17 @@ export function CenariLogCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Meu papel
-            </p>
+            <p className="eyebrow">Meu papel</p>
 
-            <h2>
-              Produto, conteúdo, validação e evolução
-            </h2>
+            <h2>Produto, conteúdo, validação e evolução</h2>
 
-            <FeatureList
-              items={responsibilities}
-            />
+            <FeatureList items={responsibilities} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Uso da IA
-            </p>
+            <p className="eyebrow">Uso da IA</p>
 
-            <h2>
-              Desenvolvimento assistido com revisão humana
-            </h2>
+            <h2>Desenvolvimento assistido com revisão humana</h2>
 
             <p>
               A inteligência artificial foi utilizada como apoio na pesquisa,
@@ -672,31 +567,21 @@ export function CenariLogCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Tecnologias
-            </p>
+            <p className="eyebrow">Tecnologias</p>
 
-            <h2>
-              Tecnologias utilizadas
-            </h2>
+            <h2>Tecnologias utilizadas</h2>
 
             <ul className="tech-list case-tech-list">
               {technologies.map((technology) => (
-                <li key={technology}>
-                  {technology}
-                </li>
+                <li key={technology}>{technology}</li>
               ))}
             </ul>
           </article>
 
           <article>
-            <p className="eyebrow">
-              Status
-            </p>
+            <p className="eyebrow">Status</p>
 
-            <h2>
-              Protótipo educacional funcional
-            </h2>
+            <h2>Protótipo educacional funcional</h2>
 
             <p>
               A plataforma permite simular indicadores, cadastrar produtos,
@@ -706,8 +591,7 @@ export function CenariLogCaseStudy() {
 
             <p>
               Os resultados dependem dos dados e das premissas informadas e não
-              devem ser interpretados como recomendação profissional
-              automática.
+              devem ser interpretados como recomendação profissional automática.
             </p>
 
             <span className="project-status-badge status-available">
@@ -720,44 +604,28 @@ export function CenariLogCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Limitações
-            </p>
+            <p className="eyebrow">Limitações</p>
 
-            <h2>
-              Transparência sobre a finalidade educacional
-            </h2>
+            <h2>Transparência sobre a finalidade educacional</h2>
 
-            <FeatureList
-              items={limitations}
-            />
+            <FeatureList items={limitations} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Próximas melhorias
-            </p>
+            <p className="eyebrow">Próximas melhorias</p>
 
-            <h2>
-              Evolução da experiência e do conteúdo
-            </h2>
+            <h2>Evolução da experiência e do conteúdo</h2>
 
-            <FeatureList
-              items={nextSteps}
-            />
+            <FeatureList items={nextSteps} />
           </article>
         </div>
       </section>
 
       <section className="section section-alt">
         <div className="container narrow result-section">
-          <p className="eyebrow">
-            Resultado
-          </p>
+          <p className="eyebrow">Resultado</p>
 
-          <h2>
-            Indicadores transformados em experiências de aprendizagem
-          </h2>
+          <h2>Indicadores transformados em experiências de aprendizagem</h2>
 
           <p className="case-lead">
             O CenariLog Academy evoluiu de um painel de indicadores para um

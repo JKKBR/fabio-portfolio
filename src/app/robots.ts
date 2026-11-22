@@ -7,7 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
 
-    sitemap:
-      "https://ffssportfolio.vercel.app/sitemap.xml",
+    sitemap: "https://ffssportfolio.vercel.app/sitemap.xml",
   };
 }

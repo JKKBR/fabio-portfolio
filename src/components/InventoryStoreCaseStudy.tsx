@@ -50,8 +50,7 @@ const inventoryStatuses = [
   },
   {
     title: "Vendido",
-    description:
-      "O produto não está mais disponível para novos pedidos.",
+    description: "O produto não está mais disponível para novos pedidos.",
     className: "inventory-sold",
   },
 ];
@@ -151,17 +150,11 @@ const nextSteps = [
   "Melhorar a experiência do painel administrativo",
 ];
 
-function FeatureList({
-  items,
-}: {
-  items: string[];
-}) {
+function FeatureList({ items }: { items: string[] }) {
   return (
     <ul className="feature-list">
       {items.map((item) => (
-        <li key={item}>
-          {item}
-        </li>
+        <li key={item}>{item}</li>
       ))}
     </ul>
   );
@@ -172,9 +165,7 @@ export function InventoryStoreCaseStudy() {
     <>
       <section className="section">
         <div className="container narrow">
-          <p className="eyebrow">
-            Artesanatos Lucia&apos;S
-          </p>
+          <p className="eyebrow">Artesanatos Lucia&apos;S</p>
 
           <h2>
             Sistema de inventário e vitrine digital para um pequeno negócio
@@ -200,8 +191,8 @@ export function InventoryStoreCaseStudy() {
           </p>
 
           <blockquote className="case-highlight">
-            Como transformar um conjunto de fotografias e produtos usados em
-            uma vitrine organizada, atualizada e simples de administrar?
+            Como transformar um conjunto de fotografias e produtos usados em uma
+            vitrine organizada, atualizada e simples de administrar?
           </blockquote>
         </div>
       </section>
@@ -209,13 +200,9 @@ export function InventoryStoreCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Problema
-            </p>
+            <p className="eyebrow">Problema</p>
 
-            <h2>
-              Fotografias isoladas não formavam um catálogo organizado
-            </h2>
+            <h2>Fotografias isoladas não formavam um catálogo organizado</h2>
 
             <p>
               Apresentar produtos por fotografias enviadas individualmente
@@ -231,13 +218,9 @@ export function InventoryStoreCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Solução
-            </p>
+            <p className="eyebrow">Solução</p>
 
-            <h2>
-              Uma vitrine conectada ao controle do estoque
-            </h2>
+            <h2>Uma vitrine conectada ao controle do estoque</h2>
 
             <p>
               Desenvolvi uma plataforma que reúne cadastro, fotografias,
@@ -246,8 +229,8 @@ export function InventoryStoreCaseStudy() {
             </p>
 
             <p>
-              O painel administrativo permite gerenciar os produtos, enquanto
-              a vitrine apresenta ao público apenas as informações necessárias
+              O painel administrativo permite gerenciar os produtos, enquanto a
+              vitrine apresenta ao público apenas as informações necessárias
               para conhecer o item e iniciar uma conversa pelo WhatsApp.
             </p>
           </article>
@@ -257,13 +240,9 @@ export function InventoryStoreCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Fluxo operacional
-            </p>
+            <p className="eyebrow">Fluxo operacional</p>
 
-            <h2>
-              Do cadastro do item à atualização do estoque
-            </h2>
+            <h2>Do cadastro do item à atualização do estoque</h2>
 
             <p>
               O fluxo foi organizado para facilitar tanto a administração dos
@@ -274,13 +253,9 @@ export function InventoryStoreCaseStudy() {
           <ol className="case-flow">
             {operationFlow.map((step, index) => (
               <li key={step}>
-                <span>
-                  {String(index + 1).padStart(2, "0")}
-                </span>
+                <span>{String(index + 1).padStart(2, "0")}</span>
 
-                <strong>
-                  {step}
-                </strong>
+                <strong>{step}</strong>
               </li>
             ))}
           </ol>
@@ -290,13 +265,9 @@ export function InventoryStoreCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Principais funcionalidades
-            </p>
+            <p className="eyebrow">Principais funcionalidades</p>
 
-            <h2>
-              Gestão e apresentação dos produtos
-            </h2>
+            <h2>Gestão e apresentação dos produtos</h2>
           </div>
 
           <div className="case-panel">
@@ -308,30 +279,22 @@ export function InventoryStoreCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Cadastro
-            </p>
+            <p className="eyebrow">Cadastro</p>
 
-            <h2>
-              Informações reunidas em um único registro
-            </h2>
+            <h2>Informações reunidas em um único registro</h2>
 
             <p>
-              Cada produto pode ser apresentado com informações suficientes
-              para identificação, análise e contato.
+              Cada produto pode ser apresentado com informações suficientes para
+              identificação, análise e contato.
             </p>
 
             <FeatureList items={productData} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Imagens
-            </p>
+            <p className="eyebrow">Imagens</p>
 
-            <h2>
-              Fotografias organizadas e acessíveis na nuvem
-            </h2>
+            <h2>Fotografias organizadas e acessíveis na nuvem</h2>
 
             <p>
               As imagens dos produtos são gerenciadas pelo Cloudinary,
@@ -340,8 +303,8 @@ export function InventoryStoreCaseStudy() {
             </p>
 
             <p>
-              Isso separa os arquivos visuais do código e facilita a inclusão
-              de novos produtos no catálogo.
+              Isso separa os arquivos visuais do código e facilita a inclusão de
+              novos produtos no catálogo.
             </p>
           </article>
         </div>
@@ -350,13 +313,9 @@ export function InventoryStoreCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Controle de disponibilidade
-            </p>
+            <p className="eyebrow">Controle de disponibilidade</p>
 
-            <h2>
-              Estados que acompanham o ciclo de cada produto
-            </h2>
+            <h2>Estados que acompanham o ciclo de cada produto</h2>
 
             <p>
               A situação do item é apresentada de forma clara para apoiar o
@@ -372,13 +331,9 @@ export function InventoryStoreCaseStudy() {
               >
                 <span className="inventory-status-dot" />
 
-                <h3>
-                  {status.title}
-                </h3>
+                <h3>{status.title}</h3>
 
-                <p>
-                  {status.description}
-                </p>
+                <p>{status.description}</p>
               </article>
             ))}
           </div>
@@ -388,17 +343,13 @@ export function InventoryStoreCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Painel administrativo
-            </p>
+            <p className="eyebrow">Painel administrativo</p>
 
-            <h2>
-              Controle dos produtos e movimentações
-            </h2>
+            <h2>Controle dos produtos e movimentações</h2>
 
             <p>
-              O painel administrativo foi desenvolvido para permitir o
-              cadastro, a atualização e a baixa dos itens.
+              O painel administrativo foi desenvolvido para permitir o cadastro,
+              a atualização e a baixa dos itens.
             </p>
 
             <p>
@@ -409,13 +360,9 @@ export function InventoryStoreCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Vitrine digital
-            </p>
+            <p className="eyebrow">Vitrine digital</p>
 
-            <h2>
-              Apresentação simples para o cliente
-            </h2>
+            <h2>Apresentação simples para o cliente</h2>
 
             <p>
               A vitrine organiza os produtos de maneira visual, mostrando
@@ -433,35 +380,27 @@ export function InventoryStoreCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Triagem e picking
-            </p>
+            <p className="eyebrow">Triagem e picking</p>
 
-            <h2>
-              Filtros para localizar e separar os itens
-            </h2>
+            <h2>Filtros para localizar e separar os itens</h2>
 
             <p>
-              Os filtros ajudam a encontrar produtos por suas características
-              e estado de conservação, facilitando a triagem e a separação para
+              Os filtros ajudam a encontrar produtos por suas características e
+              estado de conservação, facilitando a triagem e a separação para
               entrega.
             </p>
 
             <p>
-              Embora seja uma aplicação voltada a um pequeno negócio, esse
-              fluxo aplica conceitos logísticos como identificação,
-              disponibilidade, localização e picking.
+              Embora seja uma aplicação voltada a um pequeno negócio, esse fluxo
+              aplica conceitos logísticos como identificação, disponibilidade,
+              localização e picking.
             </p>
           </article>
 
           <article>
-            <p className="eyebrow">
-              Comunicação
-            </p>
+            <p className="eyebrow">Comunicação</p>
 
-            <h2>
-              Contato direto pelo WhatsApp
-            </h2>
+            <h2>Contato direto pelo WhatsApp</h2>
 
             <p>
               A integração com o WhatsApp reduz a distância entre a consulta do
@@ -480,31 +419,23 @@ export function InventoryStoreCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Resultados e impacto
-            </p>
+            <p className="eyebrow">Resultados e impacto</p>
 
-            <h2>
-              Uma necessidade local transformada em operação digital
-            </h2>
+            <h2>Uma necessidade local transformada em operação digital</h2>
           </div>
 
           <div className="grid grid-3">
             <article className="card">
-              <h3>
-                Acuracidade
-              </h3>
+              <h3>Acuracidade</h3>
 
               <p>
-                O controle de disponibilidade ajuda a reduzir divergências
-                entre a vitrine e o estoque real.
+                O controle de disponibilidade ajuda a reduzir divergências entre
+                a vitrine e o estoque real.
               </p>
             </article>
 
             <article className="card">
-              <h3>
-                Eficiência
-              </h3>
+              <h3>Eficiência</h3>
 
               <p>
                 As informações organizadas facilitam a localização dos produtos
@@ -513,9 +444,7 @@ export function InventoryStoreCaseStudy() {
             </article>
 
             <article className="card">
-              <h3>
-                Modernização
-              </h3>
+              <h3>Modernização</h3>
 
               <p>
                 Produtos que antes eram apresentados de maneira informal
@@ -529,28 +458,17 @@ export function InventoryStoreCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Diferenciais
-            </p>
+            <p className="eyebrow">Diferenciais</p>
 
-            <h2>
-              Tecnologia adaptada à realidade do pequeno negócio
-            </h2>
+            <h2>Tecnologia adaptada à realidade do pequeno negócio</h2>
           </div>
 
           <div className="grid grid-3">
             {benefits.map((benefit) => (
-              <article
-                className="case-panel"
-                key={benefit.title}
-              >
-                <h3>
-                  {benefit.title}
-                </h3>
+              <article className="case-panel" key={benefit.title}>
+                <h3>{benefit.title}</h3>
 
-                <p>
-                  {benefit.description}
-                </p>
+                <p>{benefit.description}</p>
               </article>
             ))}
           </div>
@@ -560,13 +478,9 @@ export function InventoryStoreCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Arquitetura
-            </p>
+            <p className="eyebrow">Arquitetura</p>
 
-            <h2>
-              Dados e imagens disponíveis em nuvem
-            </h2>
+            <h2>Dados e imagens disponíveis em nuvem</h2>
 
             <p>
               O Supabase é utilizado para armazenar e sincronizar os dados dos
@@ -581,13 +495,9 @@ export function InventoryStoreCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Decisão de produto
-            </p>
+            <p className="eyebrow">Decisão de produto</p>
 
-            <h2>
-              Começar pelo problema, não pela complexidade
-            </h2>
+            <h2>Começar pelo problema, não pela complexidade</h2>
 
             <p>
               A aplicação não foi criada para reproduzir todas as funções de um
@@ -606,30 +516,22 @@ export function InventoryStoreCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Meu papel
-            </p>
+            <p className="eyebrow">Meu papel</p>
 
-            <h2>
-              Da necessidade familiar à publicação
-            </h2>
+            <h2>Da necessidade familiar à publicação</h2>
 
             <FeatureList items={responsibilities} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Uso da IA
-            </p>
+            <p className="eyebrow">Uso da IA</p>
 
-            <h2>
-              Desenvolvimento assistido com validação prática
-            </h2>
+            <h2>Desenvolvimento assistido com validação prática</h2>
 
             <p>
-              A inteligência artificial foi utilizada como apoio na
-              estruturação do código, implementação inicial da interface,
-              investigação de problemas e organização da documentação.
+              A inteligência artificial foi utilizada como apoio na estruturação
+              do código, implementação inicial da interface, investigação de
+              problemas e organização da documentação.
             </p>
 
             <p className="callout">
@@ -644,31 +546,21 @@ export function InventoryStoreCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Tecnologias
-            </p>
+            <p className="eyebrow">Tecnologias</p>
 
-            <h2>
-              Tecnologias utilizadas
-            </h2>
+            <h2>Tecnologias utilizadas</h2>
 
             <ul className="tech-list case-tech-list">
               {technologies.map((technology) => (
-                <li key={technology}>
-                  {technology}
-                </li>
+                <li key={technology}>{technology}</li>
               ))}
             </ul>
           </article>
 
           <article>
-            <p className="eyebrow">
-              Status
-            </p>
+            <p className="eyebrow">Status</p>
 
-            <h2>
-              Aplicação funcional e publicada
-            </h2>
+            <h2>Aplicação funcional e publicada</h2>
 
             <p>
               A plataforma possui painel administrativo, cadastro de produtos,
@@ -691,25 +583,17 @@ export function InventoryStoreCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Limitações atuais
-            </p>
+            <p className="eyebrow">Limitações atuais</p>
 
-            <h2>
-              Transparência sobre o escopo
-            </h2>
+            <h2>Transparência sobre o escopo</h2>
 
             <FeatureList items={limitations} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Próximas melhorias
-            </p>
+            <p className="eyebrow">Próximas melhorias</p>
 
-            <h2>
-              Evolução da gestão e da experiência
-            </h2>
+            <h2>Evolução da gestão e da experiência</h2>
 
             <FeatureList items={nextSteps} />
           </article>
@@ -718,13 +602,9 @@ export function InventoryStoreCaseStudy() {
 
       <section className="section">
         <div className="container narrow result-section">
-          <p className="eyebrow">
-            Resultado
-          </p>
+          <p className="eyebrow">Resultado</p>
 
-          <h2>
-            Produtos usados transformados em uma vitrine organizada
-          </h2>
+          <h2>Produtos usados transformados em uma vitrine organizada</h2>
 
           <p className="case-lead">
             O projeto começou com a necessidade de apresentar fotografias de

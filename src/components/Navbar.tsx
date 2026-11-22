@@ -12,10 +12,16 @@ export function Navbar() {
   return (
     <header className="site-header">
       <div className="container nav-inner">
-        <Link className="brand" href="/" aria-label="Ir para a página inicial">{profile.shortName}</Link>
+        <Link className="brand" href="/" aria-label="Ir para a página inicial">
+          {profile.shortName}
+        </Link>
         <nav aria-label="Navegação principal">
           <ul className="nav-list">
-            {links.map((link) => <li key={link.href}><Link href={link.href}>{link.label}</Link></li>)}
+            {links.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href}>{link.label}</Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>

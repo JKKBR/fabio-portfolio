@@ -18,18 +18,11 @@ export default function Home() {
 
       <section className="section">
         <div className="container cta">
-          <p className="eyebrow">
-            Vamos construir algo útil
-          </p>
+          <p className="eyebrow">Vamos construir algo útil</p>
 
-          <h2>
-            Ideias ganham valor quando resolvem uma necessidade concreta.
-          </h2>
+          <h2>Ideias ganham valor quando resolvem uma necessidade concreta.</h2>
 
-          <Link
-            className="button primary"
-            href="/contato"
-          >
+          <Link className="button primary" href="/contato">
             Entrar em contato
           </Link>
         </div>

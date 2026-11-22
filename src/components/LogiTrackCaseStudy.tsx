@@ -23,11 +23,7 @@ const modules = [
     title: "Gestão de produtividade",
     description:
       "Painel para acompanhar tempos de operação, paradas, entregas e situação dos veículos.",
-    technologies: [
-      "JavaScript",
-      "Status operacional",
-      "Controle de entregas",
-    ],
+    technologies: ["JavaScript", "Status operacional", "Controle de entregas"],
   },
   {
     title: "Segurança e prevenção de perdas",
@@ -43,11 +39,7 @@ const modules = [
     title: "Torre de Controle e BI",
     description:
       "Dashboard com indicadores para acompanhar entregas, verificações de segurança e tempo médio de trânsito.",
-    technologies: [
-      "Chart.js",
-      "Indicadores",
-      "Visualização de dados",
-    ],
+    technologies: ["Chart.js", "Indicadores", "Visualização de dados"],
   },
 ];
 
@@ -162,17 +154,11 @@ const nextSteps = [
   "Permitir exportação dos indicadores",
 ];
 
-function FeatureList({
-  items,
-}: {
-  items: string[];
-}) {
+function FeatureList({ items }: { items: string[] }) {
   return (
     <ul className="feature-list">
       {items.map((item) => (
-        <li key={item}>
-          {item}
-        </li>
+        <li key={item}>{item}</li>
       ))}
     </ul>
   );
@@ -183,13 +169,9 @@ export function LogiTrackCaseStudy() {
     <>
       <section className="section">
         <div className="container narrow">
-          <p className="eyebrow">
-            LogiTrack
-          </p>
+          <p className="eyebrow">LogiTrack</p>
 
-          <h2>
-            Simulador de Torre de Controle e telemetria de frotas
-          </h2>
+          <h2>Simulador de Torre de Controle e telemetria de frotas</h2>
 
           <p className="case-lead">
             Uma aplicação demonstrativa que conecta logística, localização,
@@ -198,10 +180,9 @@ export function LogiTrackCaseStudy() {
           </p>
 
           <p>
-            O projeto foi criado para representar o funcionamento básico de
-            uma Torre de Controle logística, reunindo rotas, status dos
-            veículos, produtividade, indicadores e recursos simulados de
-            segurança.
+            O projeto foi criado para representar o funcionamento básico de uma
+            Torre de Controle logística, reunindo rotas, status dos veículos,
+            produtividade, indicadores e recursos simulados de segurança.
           </p>
 
           <blockquote className="case-highlight">
@@ -210,9 +191,9 @@ export function LogiTrackCaseStudy() {
           </blockquote>
 
           <p>
-            O LogiTrack utiliza dados simulados e possui finalidade
-            educacional e demonstrativa. Ele não se conecta a veículos,
-            rastreadores ou câmeras reais.
+            O LogiTrack utiliza dados simulados e possui finalidade educacional
+            e demonstrativa. Ele não se conecta a veículos, rastreadores ou
+            câmeras reais.
           </p>
         </div>
       </section>
@@ -220,13 +201,9 @@ export function LogiTrackCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Problema
-            </p>
+            <p className="eyebrow">Problema</p>
 
-            <h2>
-              Informações dispersas reduzem a visibilidade
-            </h2>
+            <h2>Informações dispersas reduzem a visibilidade</h2>
 
             <p>
               Operações de transporte podem envolver localização dos veículos,
@@ -242,13 +219,9 @@ export function LogiTrackCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Solução
-            </p>
+            <p className="eyebrow">Solução</p>
 
-            <h2>
-              Uma visão integrada da operação simulada
-            </h2>
+            <h2>Uma visão integrada da operação simulada</h2>
 
             <p>
               O LogiTrack apresenta veículos, rotas, indicadores e recursos de
@@ -267,31 +240,23 @@ export function LogiTrackCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Fluxo operacional
-            </p>
+            <p className="eyebrow">Fluxo operacional</p>
 
-            <h2>
-              Do monitoramento ao apoio à decisão
-            </h2>
+            <h2>Do monitoramento ao apoio à decisão</h2>
 
             <p>
               A experiência conduz o usuário por diferentes níveis de
-              informação, começando pela localização dos ativos e avançando
-              até os indicadores consolidados.
+              informação, começando pela localização dos ativos e avançando até
+              os indicadores consolidados.
             </p>
           </div>
 
           <ol className="case-flow">
             {operationalFlow.map((step, index) => (
               <li key={step}>
-                <span>
-                  {String(index + 1).padStart(2, "0")}
-                </span>
+                <span>{String(index + 1).padStart(2, "0")}</span>
 
-                <strong>
-                  {step}
-                </strong>
+                <strong>{step}</strong>
               </li>
             ))}
           </ol>
@@ -301,37 +266,24 @@ export function LogiTrackCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Módulos
-            </p>
+            <p className="eyebrow">Módulos</p>
 
-            <h2>
-              Quatro perspectivas da operação logística
-            </h2>
+            <h2>Quatro perspectivas da operação logística</h2>
           </div>
 
           <div className="grid grid-2">
             {modules.map((module) => (
-              <article
-                className="case-panel"
-                key={module.title}
-              >
-                <h3>
-                  {module.title}
-                </h3>
+              <article className="case-panel" key={module.title}>
+                <h3>{module.title}</h3>
 
-                <p>
-                  {module.description}
-                </p>
+                <p>{module.description}</p>
 
                 <ul
                   className="tech-list"
                   aria-label={`Recursos do módulo ${module.title}`}
                 >
                   {module.technologies.map((technology) => (
-                    <li key={technology}>
-                      {technology}
-                    </li>
+                    <li key={technology}>{technology}</li>
                   ))}
                 </ul>
               </article>
@@ -343,17 +295,13 @@ export function LogiTrackCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Rastreabilidade
-            </p>
+            <p className="eyebrow">Rastreabilidade</p>
 
-            <h2>
-              Mapa interativo e situação dos ativos
-            </h2>
+            <h2>Mapa interativo e situação dos ativos</h2>
 
             <p>
-              O módulo geográfico utiliza Leaflet.js para apresentar os
-              veículos e suas rotas em um mapa interativo.
+              O módulo geográfico utiliza Leaflet.js para apresentar os veículos
+              e suas rotas em um mapa interativo.
             </p>
 
             <p>
@@ -364,13 +312,9 @@ export function LogiTrackCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Dados monitorados
-            </p>
+            <p className="eyebrow">Dados monitorados</p>
 
-            <h2>
-              Informações reunidas no painel
-            </h2>
+            <h2>Informações reunidas no painel</h2>
 
             <FeatureList items={monitoredData} />
           </article>
@@ -380,13 +324,9 @@ export function LogiTrackCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Produtividade
-            </p>
+            <p className="eyebrow">Produtividade</p>
 
-            <h2>
-              Tempos, paradas e entregas
-            </h2>
+            <h2>Tempos, paradas e entregas</h2>
 
             <p>
               O painel de rotas demonstra como informações operacionais podem
@@ -401,18 +341,13 @@ export function LogiTrackCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Torre de Controle
-            </p>
+            <p className="eyebrow">Torre de Controle</p>
 
-            <h2>
-              Indicadores visuais com Chart.js
-            </h2>
+            <h2>Indicadores visuais com Chart.js</h2>
 
             <p>
-              O módulo de Business Intelligence utiliza gráficos para
-              consolidar informações e tornar a leitura da operação mais
-              rápida.
+              O módulo de Business Intelligence utiliza gráficos para consolidar
+              informações e tornar a leitura da operação mais rápida.
             </p>
 
             <FeatureList
@@ -431,13 +366,9 @@ export function LogiTrackCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Segurança integrada
-            </p>
+            <p className="eyebrow">Segurança integrada</p>
 
-            <h2>
-              Monitoramento demonstrativo de CFTV
-            </h2>
+            <h2>Monitoramento demonstrativo de CFTV</h2>
 
             <p>
               O projeto inclui uma interface simulada de câmeras embarcadas e
@@ -452,13 +383,9 @@ export function LogiTrackCaseStudy() {
           </article>
 
           <article>
-            <p className="eyebrow">
-              Escopo
-            </p>
+            <p className="eyebrow">Escopo</p>
 
-            <h2>
-              Uma demonstração visual, não um sistema de vigilância
-            </h2>
+            <h2>Uma demonstração visual, não um sistema de vigilância</h2>
 
             <p>
               As câmeras, filmagens e eventos apresentados fazem parte da
@@ -477,13 +404,9 @@ export function LogiTrackCaseStudy() {
       <section className="section section-alt">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Recursos
-            </p>
+            <p className="eyebrow">Recursos</p>
 
-            <h2>
-              Principais entregas do simulador
-            </h2>
+            <h2>Principais entregas do simulador</h2>
           </div>
 
           <div className="case-panel">
@@ -495,28 +418,17 @@ export function LogiTrackCaseStudy() {
       <section className="section">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">
-              Diferenciais
-            </p>
+            <p className="eyebrow">Diferenciais</p>
 
-            <h2>
-              Tecnologia aplicada à visibilidade operacional
-            </h2>
+            <h2>Tecnologia aplicada à visibilidade operacional</h2>
           </div>
 
           <div className="grid grid-4">
             {strategicBenefits.map((benefit) => (
-              <article
-                className="card"
-                key={benefit.title}
-              >
-                <h3>
-                  {benefit.title}
-                </h3>
+              <article className="card" key={benefit.title}>
+                <h3>{benefit.title}</h3>
 
-                <p>
-                  {benefit.description}
-                </p>
+                <p>{benefit.description}</p>
               </article>
             ))}
           </div>
@@ -526,30 +438,22 @@ export function LogiTrackCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Meu papel
-            </p>
+            <p className="eyebrow">Meu papel</p>
 
-            <h2>
-              Conceito, integração e experiência visual
-            </h2>
+            <h2>Conceito, integração e experiência visual</h2>
 
             <FeatureList items={responsibilities} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Uso da IA
-            </p>
+            <p className="eyebrow">Uso da IA</p>
 
-            <h2>
-              Desenvolvimento assistido com validação humana
-            </h2>
+            <h2>Desenvolvimento assistido com validação humana</h2>
 
             <p>
-              A inteligência artificial foi utilizada como apoio na
-              estruturação da interface, implementação inicial dos módulos,
-              investigação de problemas e organização da documentação.
+              A inteligência artificial foi utilizada como apoio na estruturação
+              da interface, implementação inicial dos módulos, investigação de
+              problemas e organização da documentação.
             </p>
 
             <p className="callout">
@@ -564,31 +468,21 @@ export function LogiTrackCaseStudy() {
       <section className="section">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Tecnologias
-            </p>
+            <p className="eyebrow">Tecnologias</p>
 
-            <h2>
-              Tecnologias utilizadas
-            </h2>
+            <h2>Tecnologias utilizadas</h2>
 
             <ul className="tech-list case-tech-list">
               {technologies.map((technology) => (
-                <li key={technology}>
-                  {technology}
-                </li>
+                <li key={technology}>{technology}</li>
               ))}
             </ul>
           </article>
 
           <article>
-            <p className="eyebrow">
-              Status
-            </p>
+            <p className="eyebrow">Status</p>
 
-            <h2>
-              Simulador funcional e disponível
-            </h2>
+            <h2>Simulador funcional e disponível</h2>
 
             <p>
               A aplicação possui mapa, veículos simulados, status operacional,
@@ -611,25 +505,17 @@ export function LogiTrackCaseStudy() {
       <section className="section section-alt">
         <div className="container case-grid">
           <article>
-            <p className="eyebrow">
-              Limitações atuais
-            </p>
+            <p className="eyebrow">Limitações atuais</p>
 
-            <h2>
-              Transparência sobre a simulação
-            </h2>
+            <h2>Transparência sobre a simulação</h2>
 
             <FeatureList items={limitations} />
           </article>
 
           <article>
-            <p className="eyebrow">
-              Próximas melhorias
-            </p>
+            <p className="eyebrow">Próximas melhorias</p>
 
-            <h2>
-              Evolução da experiência operacional
-            </h2>
+            <h2>Evolução da experiência operacional</h2>
 
             <FeatureList items={nextSteps} />
           </article>
@@ -638,18 +524,14 @@ export function LogiTrackCaseStudy() {
 
       <section className="section">
         <div className="container narrow result-section">
-          <p className="eyebrow">
-            Resultado
-          </p>
+          <p className="eyebrow">Resultado</p>
 
-          <h2>
-            Uma visão integrada de transporte, dados e segurança
-          </h2>
+          <h2>Uma visão integrada de transporte, dados e segurança</h2>
 
           <p className="case-lead">
             O LogiTrack demonstra como informações de localização,
-            produtividade, indicadores e segurança podem ser organizadas em
-            uma experiência única de monitoramento.
+            produtividade, indicadores e segurança podem ser organizadas em uma
+            experiência única de monitoramento.
           </p>
 
           <div
@@ -670,8 +552,8 @@ export function LogiTrackCaseStudy() {
           </div>
 
           <blockquote className="final-quote">
-            “Transforme dados de transporte em uma visão operacional mais
-            clara, integrada e orientada à tomada de decisão.”
+            “Transforme dados de transporte em uma visão operacional mais clara,
+            integrada e orientada à tomada de decisão.”
           </blockquote>
         </div>
       </section>
