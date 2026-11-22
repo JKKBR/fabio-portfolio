@@ -5,110 +5,249 @@ export const projects: Project[] = [
     slug: "gerador-planilhas-ia",
     title: "Gerador de Planilhas Administrativas",
     category: "Micro SaaS e IA",
-    description: "Transforma necessidades descritas em portugues em planilhas Excel editaveis, validadas e prontas para revisao.",
+    description:
+      "Transforma necessidades descritas em português em planilhas Excel editáveis, validadas e prontas para revisão.",
     featured: true,
     status: "Em desenvolvimento",
-    technologies: ["Next.js", "TypeScript", "Gemini API", "ExcelJS", "Zod", "Vitest"],
-    problem: "Criar planilhas administrativas personalizadas exige conhecimento de estrutura, formulas e Excel. Modelos prontos raramente correspondem ao processo real do usuário.",
-    solution: "Uma aplicação que recebe o processo em linguagem natural, gera a estrutura, valida o resultado, permite revisao humana e exporta um arquivo Excel editavel.",
-    role: "Definicao do produto, priorizacao, testes funcionais, validação em Excel, investigacao de incompatibilidades, decisões de arquitetura, gestao do repositorio e documentacao.",
-    aiUse: "Desenvolvimento assistido por IA, com revisao humana, validação estrutural, testes automatizados e decisões tecnicas manuais.",
-    resources: ["Multiplas abas", "Formulas por linha e por celula", "Validação com Zod", "Confirmacao do entendimento", "Relatorio de qualidade", "Exportacao XLSX", "Testes automatizados"],
-    nextSteps: ["Correcao automatica de estruturas invalidas", "Perguntas de esclarecimento", "Testes reais de arquivos XLSX", "Limites de uso", "Seguranca de formulas"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Gemini API",
+      "ExcelJS",
+      "Zod",
+      "Vitest",
+    ],
+    problem:
+      "Criar planilhas administrativas personalizadas exige conhecimento de estrutura, fórmulas e Excel. Modelos prontos raramente correspondem ao processo real do usuário.",
+    solution:
+      "Uma aplicação que recebe o processo em linguagem natural, gera a estrutura, valida o resultado, permite revisão humana e exporta um arquivo Excel editável.",
+    role:
+      "Definição do produto, priorização, testes funcionais, validação em Excel, investigação de incompatibilidades, decisões de arquitetura, gestão do repositório e documentação.",
+    aiUse:
+      "Desenvolvimento assistido por IA, com revisão humana, validação estrutural, testes automatizados e decisões técnicas manuais.",
+    resources: [
+      "Múltiplas abas",
+      "Fórmulas por linha e por célula",
+      "Validação com Zod",
+      "Confirmação do entendimento",
+      "Relatório de qualidade",
+      "Exportação XLSX",
+      "Testes automatizados",
+    ],
+    nextSteps: [
+      "Correção automática de estruturas inválidas",
+      "Perguntas de esclarecimento",
+      "Testes reais de arquivos XLSX",
+      "Limites de uso",
+      "Segurança de fórmulas",
+    ],
   },
   {
     slug: "cenarilog-academy",
     title: "CenariLog Academy",
-    category: "Logística e Educacao",
-    description: "Laboratorio educacional para simular indicadores, estoque, custos, riscos e decisões logísticas.",
+    category: "Logística e Educação",
+    description:
+      "Laboratório educacional para simular indicadores, estoque, custos, riscos e decisões logísticas.",
     featured: true,
-    status: "Disponivel",
-    technologies: ["Next.js", "TypeScript", "Armazenamento local"],
-    problem: "Conceitos logisticos costumam ser estudados isoladamente, dificultando a visualização dos efeitos de cada decisao.",
-    solution: "Um ambiente de simulação que permite alterar cenários, comparar indicadores e observar consequencias operacionais.",
-    role: "Concepcao, definicao dos modulos, validação didatica, testes e documentacao.",
-    resources: ["OTIF, OTD e Fill Rate", "Curva ABC", "Planejamento mensal", "Matriz de risco", "Otimizador de cenários", "Guia interativo"],
-    liveUrl: "https://cenarilog-academy.vercel.app/",
+    status: "Disponível",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Armazenamento local",
+    ],
+    problem:
+      "Conceitos logísticos costumam ser estudados isoladamente, dificultando a visualização dos efeitos de cada decisão.",
+    solution:
+      "Um ambiente de simulação que permite alterar cenários, comparar indicadores e observar consequências operacionais.",
+    role:
+      "Concepção, definição dos módulos, validação didática, testes e documentação.",
+    resources: [
+      "OTIF, OTD e Fill Rate",
+      "Curva ABC",
+      "Planejamento mensal",
+      "Matriz de risco",
+      "Otimizador de cenários",
+      "Guia interativo",
+    ],
+    liveUrl:
+      "https://cenarilog-academy.vercel.app/",
   },
   {
-    slug: "currículo-ats",
+    slug: "curriculo-ats",
     title: "Currículos Profissionais",
     category: "Carreira",
-    description: "Ferramenta gratuita para criar, revisar e exportar currículos sem cadastro obrigatório.",
+    description:
+      "Ferramenta gratuita para criar, revisar e exportar currículos sem cadastro obrigatório.",
     featured: true,
-    status: "Disponivel",
-    technologies: ["HTML", "CSS", "JavaScript", "jsPDF"],
-    problem: "Ferramentas gratuitas para currículos frequentemente escondem limitacoes, exigem cadastro ou bloqueiam recursos importantes.",
-    solution: "Uma alternativa direta, sem cadastro obrigatório, com pre-visualização e exportacao em PDF e TXT.",
-    role: "Definicao da experiência, desenvolvimento, testes e evolução funcional.",
-    resources: ["Pre-visualização", "Multiplas experiências", "Exportacao PDF", "Importacao e exportacao TXT", "Processamento local"],
-    liveUrl: "https://criadordecurrículo-nine.vercel.app/",
+    status: "Disponível",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jsPDF",
+    ],
+    problem:
+      "Ferramentas gratuitas para currículos frequentemente escondem limitações, exigem cadastro ou bloqueiam recursos importantes.",
+    solution:
+      "Uma alternativa direta, sem cadastro obrigatório, com pré-visualização e exportação em PDF e TXT.",
+    role:
+      "Definição da experiência, desenvolvimento, testes e evolução funcional.",
+    resources: [
+      "Pré-visualização",
+      "Múltiplas experiências profissionais",
+      "Exportação PDF",
+      "Importação e exportação TXT",
+      "Processamento local",
+    ],
+    liveUrl:
+      "https://criadordecurriculo-nine.vercel.app/",
   },
   {
     slug: "sistema-inventario",
-    title: "Sistema de Gestao de Inventario",
+    title: "Sistema de Gestão de Inventário",
     category: "Logística",
-    description: "Controle de estoque e vitrine digital aplicado a um pequeno comercio local.",
+    description:
+      "Controle de estoque e vitrine digital aplicados a um pequeno comércio local.",
     featured: true,
-    status: "Disponivel",
-    technologies: ["JavaScript", "HTML", "CSS", "Supabase", "Cloudinary"],
-    problem: "Processos manuais dificultavam o controle do estoque, das reservas e da disponibilidade dos produtos.",
-    solution: "Uma plataforma digital com cadastro, baixa, status de disponibilidade, filtros e vitrine atualizada.",
-    role: "Levantamento da necessidade, modelagem do fluxo, desenvolvimento, implantacao e validação.",
-    resources: ["Entradas e saidas", "Status disponivel, reservado e vendido", "Filtros", "Vitrine digital", "Contato por WhatsApp"],
-    liveUrl: "https://artesanatoslucias.vercel.app/",
+    status: "Disponível",
+    technologies: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Supabase",
+      "Cloudinary",
+    ],
+    problem:
+      "Processos manuais dificultavam o controle do estoque, das reservas e da disponibilidade dos produtos.",
+    solution:
+      "Uma plataforma digital com cadastro, baixa, status de disponibilidade, filtros e vitrine atualizada.",
+    role:
+      "Levantamento da necessidade, modelagem do fluxo, desenvolvimento, implantação e validação.",
+    resources: [
+      "Entradas e saídas",
+      "Status disponível, reservado e vendido",
+      "Filtros",
+      "Vitrine digital",
+      "Contato por WhatsApp",
+    ],
+    liveUrl:
+      "https://artesanatoslucias.vercel.app/",
   },
   {
     slug: "logitrack",
     title: "LogiTrack",
     category: "Logística",
-    description: "Simulador de torre de controle, telemetria e visualização de indicadores de frota.",
-    status: "Disponivel",
-    technologies: ["HTML", "CSS", "JavaScript", "Leaflet", "Chart.js"],
-    problem: "Operações de transporte precisam reunir localização, produtividade, seguranca e indicadores em uma visao integrada.",
-    solution: "Um simulador visual que combina mapa, status de rotas, KPIs e monitoramento de seguranca.",
-    role: "Concepcao, desenvolvimento da interface, integracao dos modulos e documentacao.",
-    resources: ["Mapa interativo", "Status de veiculos", "Dashboard de KPIs", "Geofencing", "Simulação de CFTV"],
-    liveUrl: "https://jkkbr.github.io/simulador-de-frota/",
+    description:
+      "Simulador de torre de controle, telemetria e visualização de indicadores de frota.",
+    status: "Disponível",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Leaflet",
+      "Chart.js",
+    ],
+    problem:
+      "Operações de transporte precisam reunir localização, produtividade, segurança e indicadores em uma visão integrada.",
+    solution:
+      "Um simulador visual que combina mapa, status de rotas, KPIs e monitoramento de segurança.",
+    role:
+      "Concepção, desenvolvimento da interface, integração dos módulos e documentação.",
+    resources: [
+      "Mapa interativo",
+      "Status de veículos",
+      "Dashboard de KPIs",
+      "Geofencing",
+      "Simulação de CFTV",
+    ],
+    liveUrl:
+      "https://jkkbr.github.io/simulador-de-frota/",
   },
   {
     slug: "gerador-diagramas",
     title: "Gerador de Diagramas",
     category: "Produtividade",
-    description: "Editor leve para criar fluxos, conectar blocos e exportar diagramas em PNG.",
-    status: "Em desenvolvimento",
-    technologies: ["HTML", "CSS", "JavaScript", "Canvas"],
-    problem: "Criar diagramas simples pode exigir ferramentas maiores e mais complexas do que a necessidade real.",
-    solution: "Um editor direto para montar blocos, conexoes e fluxos visuais no navegador.",
-    role: "Concepcao, desenvolvimento da interacao e testes de usabilidade.",
-    resources: ["Retangulos e circulos", "Conexoes direcionais", "Personalizacao visual", "Arrastar e soltar", "Exportacao PNG"],
-    liveUrl: "https://jkkbr.github.io/gerador-de-diagrama/",
+    description:
+      "Editor leve para criar fluxos, conectar blocos e exportar diagramas em PNG.",
+    status: "Disponível",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Canvas",
+    ],
+    problem:
+      "Criar diagramas simples pode exigir ferramentas maiores e mais complexas do que a necessidade real.",
+    solution:
+      "Um editor direto para montar blocos, conexões e fluxos visuais no navegador.",
+    role:
+      "Concepção, desenvolvimento da interação e testes de usabilidade.",
+    resources: [
+      "Retângulos e círculos",
+      "Conexões direcionais",
+      "Personalização visual",
+      "Arrastar e soltar",
+      "Exportação PNG",
+    ],
+    liveUrl:
+      "https://jkkbr.github.io/gerador-de-diagrama/",
   },
   {
     slug: "passaporte-produto-usado",
     title: "Passaporte do Produto Usado",
-    category: "Experimental",
-    description: "Conceito em documentacao para organizar historico, condicao e informacoes de produtos usados.",
-    status: "Em desenvolvimento",
-    technologies: ["A definir"],
-    problem: "Informacoes sobre procedencia, condicao e historico de produtos usados podem ficar dispersas.",
-    solution: "Um conceito de registro estruturado para apoiar transparencia e consulta.",
-    role: "Pesquisa, definicao inicial e validação do conceito.",
-    resources: ["Projeto em documentacao"],
-    liveUrl: "https://jkkbr.github.io/PassaporteProdutoUsado/",
+    category: "Produtividade",
+    description:
+      "Aplicação web estática para cadastrar produtos usados e gerar certificados em PDF com fotografias, QR Code, histórico local e backup em JSON.",
+    status: "Demonstração",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "localStorage",
+      "jsPDF",
+      "QRCode.js",
+    ],
+    problem:
+      "Pequenos comerciantes e vendedores independentes nem sempre possuem uma forma organizada de reunir procedência, características, condição e dados da venda de produtos usados.",
+    solution:
+      "Uma aplicação executada no navegador que gera certificados declaratórios em PDF com fotografias, QR Code, dados do comprador e identidade da empresa.",
+    role:
+      "Definição do produto, arquitetura, experiência, estrutura de dados, estratégia de backup, validação do PDF, testes e documentação.",
+    aiUse:
+      "Desenvolvimento assistido por IA, com decisões de produto, revisão visual, validação funcional e ajustes realizados com supervisão humana.",
+    resources: [
+      "Certificado A4",
+      "Fotografias",
+      "QR Code",
+      "Histórico local",
+      "Pesquisa e edição",
+      "Exportação CSV",
+      "Backup JSON",
+    ],
+    liveUrl:
+      "https://jkkbr.github.io/PassaporteProdutoUsado/",
   },
   {
     slug: "rota-a-rota",
     title: "Rota a Rota",
     category: "Experimental",
-    description: "Projeto pessoal para organizar lugares e rotas de interesse.",
+    description:
+      "Projeto pessoal para organizar lugares e rotas de interesse.",
     status: "Em desenvolvimento",
-    technologies: ["A definir"],
-    problem: "Organizar referências de lugares e trajetos pessoais de forma simples.",
-    solution: "Um protótipo para registrar e consultar rotas e locais.",
-    role: "Concepção e exploração inicial.",
-    resources: ["Projeto de uso pessoal"],
-    liveUrl: "https://jkkbr.github.io/rotaarota/",
+    technologies: [
+      "A definir",
+    ],
+    problem:
+      "Organizar referências de lugares e trajetos pessoais de forma simples.",
+    solution:
+      "Um protótipo para registrar e consultar rotas e locais.",
+    role:
+      "Concepção e exploração inicial.",
+    resources: [
+      "Projeto de uso pessoal",
+    ],
+    liveUrl:
+      "https://jkkbr.github.io/rotaarota/",
   },
 ];
 
