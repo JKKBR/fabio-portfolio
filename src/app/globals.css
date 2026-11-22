@@ -427,3 +427,38 @@ p { color:var(--muted); margin:0 0 18px; }
     transform: rotate(90deg);
   }
 }
+.simple-process {
+  display: grid;
+  gap: 10px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: process-step;
+}
+
+.simple-process li {
+  position: relative;
+  padding: 14px 16px 14px 54px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  background: var(--surface);
+  counter-increment: process-step;
+}
+
+.simple-process li::before {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  background: var(--primary);
+  content: counter(process-step);
+  font-size: 0.72rem;
+  font-weight: 800;
+  transform: translateY(-50%);
+}

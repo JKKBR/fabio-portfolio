@@ -89,35 +89,47 @@ export const projects: Project[] = [
     "https://cenarilog-academy.vercel.app/",
 },
   {
-    slug: "curriculo-ats",
-    title: "Currículos Profissionais",
-    category: "Carreira",
-    description:
-      "Ferramenta gratuita para criar, revisar e exportar currículos sem cadastro obrigatório.",
-    featured: true,
-    status: "Disponível",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "jsPDF",
-    ],
-    problem:
-      "Ferramentas gratuitas para currículos frequentemente escondem limitações, exigem cadastro ou bloqueiam recursos importantes.",
-    solution:
-      "Uma alternativa direta, sem cadastro obrigatório, com pré-visualização e exportação em PDF e TXT.",
-    role:
-      "Definição da experiência, desenvolvimento, testes e evolução funcional.",
-    resources: [
-      "Pré-visualização",
-      "Múltiplas experiências profissionais",
-      "Exportação PDF",
-      "Importação e exportação TXT",
-      "Processamento local",
-    ],
-    liveUrl:
-      "https://criadordecurriculo-nine.vercel.app/",
-  },
+  slug: "curriculo-ats",
+  title: "Currículos Profissionais",
+  category: "Carreira",
+  description:
+    "Aplicação web gratuita para criar, revisar e exportar currículos diretamente no navegador, sem cadastro obrigatório.",
+  featured: true,
+  status: "Disponível",
+  technologies: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "jsPDF",
+  ],
+  problem:
+    "Durante a busca por emprego, encontrei ferramentas com recursos pagos, limitações inesperadas, cadastro obrigatório ou publicidade invasiva.",
+  solution:
+    "Uma aplicação direta e transparente para preencher, pré-visualizar e exportar currículos em PDF, com possibilidade de salvar e recuperar os dados em TXT.",
+  role:
+    "Definição do produto, organização das seções, desenvolvimento da interface, pré-visualização, exportação em PDF, importação e exportação TXT, testes e documentação.",
+  aiUse:
+    "Desenvolvimento assistido por IA, com decisões de produto, testes funcionais, validação prática e revisão humana.",
+  resources: [
+    "Formulário por seções",
+    "Pré-visualização em tempo real",
+    "Múltiplas experiências",
+    "Estimativa de páginas",
+    "Geração de PDF",
+    "Exportação TXT",
+    "Importação TXT",
+    "Sem cadastro obrigatório",
+  ],
+  nextSteps: [
+    "Novos modelos visuais",
+    "Mais opções de personalização",
+    "Melhorias de acessibilidade",
+    "Histórico local de versões",
+    "Testes automatizados",
+  ],
+  liveUrl:
+    "https://criadordecurriculo-nine.vercel.app/",
+},
   {
     slug: "sistema-inventario",
     title: "Sistema de Gestão de Inventário",
