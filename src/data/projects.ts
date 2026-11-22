@@ -7,7 +7,7 @@ export const projects: Project[] = [
     category: "Micro SaaS e IA",
     description: "Transforma necessidades descritas em portugues em planilhas Excel editaveis, validadas e prontas para revisao.",
     featured: true,
-    status: "Demonstracao",
+    status: "Em desenvolvimento",
     technologies: ["Next.js", "TypeScript", "Gemini API", "ExcelJS", "Zod", "Vitest"],
     problem: "Criar planilhas administrativas personalizadas exige conhecimento de estrutura, formulas e Excel. Modelos prontos raramente correspondem ao processo real do usuário.",
     solution: "Uma aplicação que recebe o processo em linguagem natural, gera a estrutura, valida o resultado, permite revisao humana e exporta um arquivo Excel editavel.",
